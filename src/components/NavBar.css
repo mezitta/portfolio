@@ -1,0 +1,21 @@
+.bar {
+    background-color: green;
+    text-align: center;
+}
+
+.nav-row {
+    color: white;
+}
+
+.nav-col a{
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .bar {
+        background-color: red;
+        position: fixed;
+        bottom: 0;
+    }
+}
