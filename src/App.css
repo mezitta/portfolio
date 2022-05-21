@@ -1,0 +1,12 @@
+.App {
+    background-color: #FFFDD0;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.App-body {
+    margin-top: 10vh;
+    min-height: 100vh;
+    padding: 0 1em;
+    position: fixed;
+}
