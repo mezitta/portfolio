@@ -18,25 +18,25 @@ const NavBar = () => {
         <Container fluid className='bar'>
             <nav>
                 <Row className="nav-row">
-                    <Col className="nav-col">
+                    <Col className="nav-col" xl={1} xs={3}>
                         <NavLink to="/">
                             <span className="nav-text">Home</span>
                             <span className="nav-icon"><FontAwesomeIcon icon={faHome} /></span>
                         </NavLink>
                     </Col>
-                    <Col className="nav-col">
+                    <Col className="nav-col" xl={1} xs={3}>
                         <NavLink to="/projects">
                             <span className="nav-text">Projects</span>
                             <span className="nav-icon"><FontAwesomeIcon icon={faFolderOpen} /></span>
                         </NavLink>
                     </Col>
-                    <Col className="nav-col">
+                    <Col className="nav-col" xl={1} xs={3}>
                         <NavLink to="/resume">
                             <span className="nav-text">Resume</span>
                             <span className="nav-icon"><FontAwesomeIcon icon={faFileInvoice} /></span>
                         </NavLink>
                     </Col>
-                    <Col className="nav-col">
+                    <Col className="nav-col" xl={1} xs={3}>
                         <NavLink to="/contact">
                             <span className="nav-text">Contact</span>
                             <span className="nav-icon"><FontAwesomeIcon icon={faEnvelope} /></span>
