@@ -15,12 +15,13 @@
 
 .nav-col {
     font-size: 1.25em;
+    padding-bottom: 2px;
 }
 
 .nav-col a{
     color: #FE6100;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: all 0.1s;
 }
 
 .nav-col a:hover {
@@ -31,11 +32,19 @@
     display: none;
 }
 
+@media only screen and (min-width: 701px) {
+    .nav-col a.active {
+        color: #bd216c;
+        border-bottom: .15em solid #bd216c;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .bar {
         position: fixed;
         bottom: 0;
         background-color: #FE6100;
+        box-shadow: 0px -2px 7px rgba(75, 75, 75, 0.5);
     }
 
     .nav-col a {
@@ -43,10 +52,12 @@
         transition: all 0.1s;
     }
 
-    .nav-col a:focus, .nav-col a:active {
-        text-decoration: underline;
-        color: #FFFDD0;
+    .nav-col a.active {
         border-bottom: 3px solid #FFFDD0;
+    }
+
+    .nav-col a:focus, .nav-col a:active {
+        color: #FFFDD0;
     }
 
     .nav-text{
