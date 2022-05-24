@@ -1,8 +1,10 @@
 import React from 'react'
 
+import './Resume.css'
+
 const Resume = () => {
     return (
-        <div>
+        <div className="resume-body">
             Resume
         </div>
     )
