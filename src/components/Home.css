@@ -22,6 +22,9 @@
     font-size: 9vw;
     font-weight: bold;
     height: 100%;
+    background-image: url('../assets/homeshark.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 img {

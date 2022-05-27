@@ -39,9 +39,9 @@ const Home = () => {
                     </Col>
 
                     <Col sm={6} className="home-right">
-                        <div>
-                            <img src={largeShark} alt='shark'/>
-                        </div>
+                        
+                            {/* <img src={largeShark} alt='shark'/> */}
+                        
                         {/* <div>
                             Howdy<br/>
                             Howdy<br/>
