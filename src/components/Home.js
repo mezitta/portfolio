@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
+import largeShark from '../assets/homeshark.svg'
+
 import './Home.css'
 
 const Home = () => {
@@ -37,9 +39,14 @@ const Home = () => {
                     </Col>
 
                     <Col sm={6} className="home-right">
-                        Howdy<br/>
-                        Howdy<br/>
-                        Howdy<br/>
+                        <div>
+                            <img src={largeShark} alt='shark'/>
+                        </div>
+                        {/* <div>
+                            Howdy<br/>
+                            Howdy<br/>
+                            Howdy<br/>
+                        </div> */}
                     </Col>
                </Row>
            </Container>
