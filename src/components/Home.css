@@ -25,16 +25,13 @@
     background-image: url('../assets/homeshark.svg');
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-img {
-    width: 100%;
-    object-fit: contain;
+    background-position: center bottom;
 }
 
 .home-text {
     margin: auto;
     text-align: left;
+    font-size: 3vh;
     width: 100%;
     margin-bottom: 10px;
     display: inline-block;
@@ -86,6 +83,8 @@ img {
     }
 }
 
+
+
 @media only screen and (max-width: 1200px) {
     .role {
         font-size: 4vh;
@@ -97,8 +96,24 @@ img {
         display: none;
     }
 
+    .home-row {
+        background-image: url('../assets/mobileshark.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right bottom;
+        align-items: start;
+        padding-top: 15vh;
+        height: 100vh;
+    }
+
     .home-left.col-lg-6.col-sm-12 {
         font-size: 3vh;
-        padding: 0;
+        padding: 0 1.5em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .home-row {
+        height: 92.5vh;
     }
 }
