@@ -20,9 +20,9 @@ const Home = () => {
                <Row className="home-row">
                     <Col sm={12} lg={6} className="home-left">
                         <div className="home-text">
-                            <div>Howdy! I'm Michael Zitta</div>
+                            <div>Michael Zitta</div>
                             <div className="role">Front End Web Developer</div>
-                            <div>I am passionate about creating responsive web applications</div>
+                            <div>Howdy! I am a front end developer that focuses on creating responsive web applications</div>
                         </div>
 
                         <Row className="button-row">
