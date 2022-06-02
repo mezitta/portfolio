@@ -10,8 +10,8 @@ import './About.css'
 const About = () => {
     return (
         <div className="about-body">
-            <Container>
-                <Row>
+            <Container fluid>
+                <Row className="about-row">
                     <Col>
                         About
                         I am currently a senior at Michigan Technological University that is majoring in computer science.
@@ -20,24 +20,24 @@ const About = () => {
                         Cooking and playing games with friends are also activities that I enjoy.
                     </Col>
                 </Row>
-                <Row>
-                    Skills
-                    <Col>
-                        Vue
-                        React
-                        Bootstrap
-                    </Col>
-                    <Col>
-                        HTML 
-                        CSS
-                        Javascript 
-                    </Col>
-                    <Col>
-                        Java
-                        C
-                        Photoshop
-                    </Col>
-                </Row>
+                Skills
+                <ul>
+                    <Row className="skills-row">
+                        <Col><li>Vue</li></Col>
+                        <Col><li>React</li></Col>
+                        <Col><li>Bootstrap</li></Col>
+                    </Row>
+                    <Row className="skills-row">
+                        <Col><li>HTML</li></Col>
+                        <Col><li>CSS</li></Col>
+                        <Col><li>Javascript</li></Col>
+                    </Row>
+                    <Row className="skills-row">
+                        <Col><li>Java</li></Col>
+                        <Col><li>C</li></Col>
+                        <Col><li>Photoshop</li></Col>
+                    </Row>
+                </ul>
                 <Row>
                     <a target="_blank" rel="noreferrer" href={Resume}>Resume</a>
                 </Row>
