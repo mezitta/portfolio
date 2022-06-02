@@ -1,0 +1,9 @@
+.about-body {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .about-body {
+        margin-top: 10vh;
+    }
+}

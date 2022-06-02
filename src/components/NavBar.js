@@ -31,8 +31,8 @@ const NavBar = () => {
                         </NavLink>
                     </Col>
                     <Col className="nav-col" xl={1} xs={3}>
-                        <NavLink to="/resume">
-                            <span className="nav-text">Resume</span>
+                        <NavLink to="/about">
+                            <span className="nav-text">About</span>
                             <span className="nav-icon"><FontAwesomeIcon icon={faFileInvoice} /></span>
                         </NavLink>
                     </Col>

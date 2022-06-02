@@ -9,8 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-import largeShark from '../assets/homeshark.svg'
-
 import './Home.css'
 
 const Home = () => {
