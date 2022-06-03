@@ -8,6 +8,43 @@
     margin-bottom: 4vh;
 }
 
+.name-tag {
+    background-color: white;
+    padding: 0 !important;
+    border-radius: 2vh;
+    border: 5px solid white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tag-header{
+    background-color: #FE6100;;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
+    border-radius: 2vh 2vh 0 0;
+}
+
+.tag-header h1{
+    font-size: 5vw;
+    letter-spacing: 1rem;
+    line-height: 85%;
+    font-weight: bold;
+}
+
+.tag-header h3 {
+    font-size: 3vh;
+}
+
+.tag-body {
+    border-bottom: 3vh solid #FE6100;;
+    border-radius: 0 0 2vh 2vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em 1em 0.25em 1em; 
+    font-size: 1.75vh;
+}
+
 .skills-row {
     display: flex;
     align-items: center;
@@ -46,9 +83,10 @@
 
 .skill-img {
     margin: auto;
-    height: 8vh;
-    width: 8vh;
-    background-color: white;
+    height: 75%;
+    width: 90%;
+    
+    border-bottom: 2px solid white;
 }
 
 .about-resume {
@@ -90,11 +128,23 @@ ul {
         margin-top: 10vh;
         padding: 0 10vw;
     }
+    
+    .tag-header h1{
+        font-size: 5vh;
+    }
+
+    .tag-header h3 {
+        font-size: 2.5vh;
+    }
 }
 
 @media only screen and (max-width: 700px) {
     .about-body {
         padding: 0 8vw 15vh 8vw;
+    }
+
+    .tag-body {
+        font-size: 4vw;
     }
 
     .skill {

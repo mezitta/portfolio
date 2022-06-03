@@ -12,12 +12,17 @@ const About = () => {
         <div className="about-body">
             <Container fluid>
                 <Row className="about-row">
-                    <Col xs={12} sm={6}>
-                        <h1>Who Am I?</h1>
-                        Howdy! My name is Michael Zitta and I am currently a senior at Michigan Technological University that is majoring in computer science.
-                        I focus on Front-End development and creating responsive web applications.
-                        In my free time I like to try and find projects to work on that can help me improve as a developer.
-                        Cooking and playing games with friends are also activities that I enjoy.
+                    <Col xs={12} sm={6} className="name-tag">
+                        <div className="tag-header">
+                            <h1>HELLO</h1>
+                            <h3>My Name Is</h3>
+                        </div>
+                        <div className="tag-body">
+                            <p>Howdy! My name is Michael Zitta and I am currently a senior at Michigan Technological University that is majoring in computer science.
+                            I focus on Front-End development and creating responsive web applications.
+                            In my free time I like to try and find projects to work on that can help me improve as a developer.
+                            Cooking and playing games with friends are also activities that I enjoy.</p>
+                        </div>
                     </Col>
                     <Col xs={12} sm={6} className="about-resume">
                         <h2>Check Out My Resume</h2>
@@ -30,37 +35,37 @@ const About = () => {
                         <Col xs={6} md={4} className="skill-col skill-left">
                             <div className="skill">
                                 <div className="skill-img"></div>
-                                <li>Vue</li>
+                                <li><p>Vue</p></li>
                             </div>
                         </Col>
                         <Col xs={6} md={4} className="skill-col">
                             <div className="skill">
                                 <div className="skill-img"></div>
-                                <li>React</li>
+                                <li><p>React</p></li>
                             </div>
                         </Col>
                         <Col xs={6} md={4}className="skill-col skill-right">
                             <div className="skill">
                                 <div className="skill-img"></div>
-                                <li>Bootstrap</li>
+                                <li><p>Bootstrap</p></li>
                             </div>
                         </Col>
                         <Col xs={6} md={4} className="skill-col skill-left">
                             <div className="skill">
                                 <div className="skill-img"></div>
-                                <li>Front-End</li>
+                                <li><p>Front-End</p></li>
                             </div>
                         </Col>
                         <Col xs={6} md={4} className="skill-col">
                             <div className="skill">
                                 <div className="skill-img"></div>
-                                <li>Java</li>
+                                <li><p>Java</p></li>
                             </div>
                         </Col>
                         <Col xs={6} md={4} className="skill-col skill-right">
                             <div className="skill">
                                 <div className="skill-img"></div>
-                                <li>C</li>
+                                <li><p>C</p></li>
                             </div>
                         </Col>
                     </Row>
