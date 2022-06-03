@@ -13,6 +13,8 @@
     padding: 0 1.5em;
     overflow-y: scroll;
     position: fixed;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .App-body::-webkit-scrollbar {

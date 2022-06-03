@@ -1,15 +1,120 @@
 .about-body {
     width: 100%;
+    padding: 0 20vw 15vh 20vw;
+    height: fit-content;
+}
+
+.about-row {
+    margin-bottom: 4vh;
 }
 
 .skills-row {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    margin: auto !important;
+    width: 70%;
+}
+
+.skill-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.skill {
+    width: 90%;
+    height: 25vh;
+    padding: 1em;
+    margin: 0 0.25vh;
+    margin-bottom: 1vh;
+    background-color: #bd216c;
+    color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.skill-left {
+    justify-content: end;
+}
+
+.skill-right {
+    justify-content: start;
+}
+
+.skill-img {
+    margin: auto;
+    height: 8vh;
+    width: 8vh;
+    background-color: white;
+}
+
+.about-resume {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.about-resume a {
+    width: fit-content;
+}
+
+.about-resume button {
+    background-color: #bd216c;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 1vh;
+    padding: .25em 1em;
+    font-size: 2.5vh;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+}
+
+.about-resume button:hover {
+    background-color: #9b1b59;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    border: 2px solid;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0 !important;
 }
 
 @media only screen and (max-width: 992px) {
     .about-body {
         margin-top: 10vh;
+        padding: 0 10vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .about-body {
+        padding: 0 8vw 15vh 8vw;
+    }
+
+    .skill {
+        height: 30vh;
+        width: 90%;
+    }
+
+    .skills-row {
+        width: 100%;
+    }
+
+    .skill-left {
+        justify-content: center;
+    }
+    
+    .skill-right {
+        justify-content: center;
+    }
+
+    .about-resume button {
+        font-size: 3.5vh;
     }
 }

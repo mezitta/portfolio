@@ -12,34 +12,61 @@ const About = () => {
         <div className="about-body">
             <Container fluid>
                 <Row className="about-row">
-                    <Col>
-                        About
-                        I am currently a senior at Michigan Technological University that is majoring in computer science.
+                    <Col xs={12} sm={6}>
+                        <h1>Who Am I?</h1>
+                        Howdy! My name is Michael Zitta and I am currently a senior at Michigan Technological University that is majoring in computer science.
                         I focus on Front-End development and creating responsive web applications.
                         In my free time I like to try and find projects to work on that can help me improve as a developer.
                         Cooking and playing games with friends are also activities that I enjoy.
                     </Col>
+                    <Col xs={12} sm={6} className="about-resume">
+                        <h2>Check Out My Resume</h2>
+                        <a target="_blank" rel="noreferrer" href={Resume}><button>Resume</button></a>
+                    </Col>
                 </Row>
-                Skills
+                <h2>Skills</h2>
                 <ul>
                     <Row className="skills-row">
-                        <Col><li>Vue</li></Col>
-                        <Col><li>React</li></Col>
-                        <Col><li>Bootstrap</li></Col>
-                    </Row>
-                    <Row className="skills-row">
-                        <Col><li>HTML</li></Col>
-                        <Col><li>CSS</li></Col>
-                        <Col><li>Javascript</li></Col>
-                    </Row>
-                    <Row className="skills-row">
-                        <Col><li>Java</li></Col>
-                        <Col><li>C</li></Col>
-                        <Col><li>Photoshop</li></Col>
+                        <Col xs={6} md={4} className="skill-col skill-left">
+                            <div className="skill">
+                                <div className="skill-img"></div>
+                                <li>Vue</li>
+                            </div>
+                        </Col>
+                        <Col xs={6} md={4} className="skill-col">
+                            <div className="skill">
+                                <div className="skill-img"></div>
+                                <li>React</li>
+                            </div>
+                        </Col>
+                        <Col xs={6} md={4}className="skill-col skill-right">
+                            <div className="skill">
+                                <div className="skill-img"></div>
+                                <li>Bootstrap</li>
+                            </div>
+                        </Col>
+                        <Col xs={6} md={4} className="skill-col skill-left">
+                            <div className="skill">
+                                <div className="skill-img"></div>
+                                <li>Front-End</li>
+                            </div>
+                        </Col>
+                        <Col xs={6} md={4} className="skill-col">
+                            <div className="skill">
+                                <div className="skill-img"></div>
+                                <li>Java</li>
+                            </div>
+                        </Col>
+                        <Col xs={6} md={4} className="skill-col skill-right">
+                            <div className="skill">
+                                <div className="skill-img"></div>
+                                <li>C</li>
+                            </div>
+                        </Col>
                     </Row>
                 </ul>
-                <Row>
-                    <a target="_blank" rel="noreferrer" href={Resume}>Resume</a>
+                <Row className="about-resume">
+                    
                 </Row>
             </Container>
         </div>

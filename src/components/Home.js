@@ -18,18 +18,24 @@ const Home = () => {
                <Row className="home-row">
                     <Col sm={12} lg={6} className="home-left">
                         <div className="home-text">
-                            <div>Michael Zitta</div>
-                            <div className="role">Front End Web Developer</div>
-                            <div>Howdy! I am a front end developer that focuses on creating responsive web applications</div>
+                            <h2>Michael Zitta</h2>
+                            <h1 className="role">Front-End Web Developer</h1>
+                            <h3>Howdy! I am a front-end developer that focuses on creating responsive web applications</h3>
                         </div>
 
                         <Row className="button-row">
-                            <Col>
-                                <NavLink to="/projects"><button className="project-button">Portfolio</button></NavLink>
-                                <NavLink to="/contact"><button className="project-button">Hire me</button></NavLink>
-                            </Col>
+                                <Col xs={6} md={3} className="desktop">
+                                    <NavLink to="/projects"><button className="project-button">Portfolio</button></NavLink>
+                                </Col>
+                                <Col className="desktop">
+                                    <NavLink to="/contact"><button className="project-button">Hire me</button></NavLink>
+                                </Col>
+                                <Col className="mobile">
+                                    <NavLink to="/projects"><button className="project-button">Portfolio</button></NavLink>
+                                    <NavLink to="/contact"><button className="project-button">Hire me</button></NavLink>
+                                </Col>
                         </Row>
-                    
+                       
                         <Row className="social-links">
                             <Col xs={2} sm={1}><a target="_blank" rel="noreferrer" href="https://github.com/mezitta"><FontAwesomeIcon icon={faGithub} /></a></Col>
                             <Col xs={2} sm={1}><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/michael-zitta/"><FontAwesomeIcon icon={faLinkedin} /></a></Col>

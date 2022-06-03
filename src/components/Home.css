@@ -18,6 +18,15 @@
     height: fit-content;
 }
 
+.home-left h2 {
+    font-size: 2vw;
+}
+
+.home-left h3 {
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+}
+
 .home-right {
     font-size: 9vw;
     font-weight: bold;
@@ -46,20 +55,34 @@
 .button-row{
     text-align: left;
     margin-bottom: 10px;
+    height: 6vh;
+}
+
+.mobile {
+    display: none;
 }
 
 .project-button {
     background-color: #bd216c;
     margin-right: 30px;
-    color: #FFFDD0;
+    color: #FFFFFF;
     border: none;
     border-radius: 1vh;
     padding: .25em 1em;
     width: fit-content;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+}
+
+.test {
+    display: inline;
+    height: 6vh;
 }
 
 .project-button:hover {
     background-color: #9b1b59;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    border: 2px solid;
 }
 
 .social-links.row {
@@ -102,7 +125,7 @@
         background-size: contain;
         background-position: right bottom;
         align-items: start;
-        padding-top: 15vh;
+        padding-top: 20vh;
         height: 100vh;
     }
 
@@ -110,10 +133,27 @@
         font-size: 3vh;
         padding: 0 1.5em;
     }
+
+    .home-left h2 {
+        font-size: 3vh;
+    }
+
+    .home-left h3 {
+        font-size: 2.5vh;
+    }
 }
 
 @media only screen and (max-width: 700px) {
     .home-row {
         height: 92.5vh;
+        padding-top: 8vh;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
     }
 }
