@@ -63,7 +63,7 @@
         opacity: 1;
     }
 
-    .nav-col a:focus, .nav-col a:active {
+    .nav-col a:focus, .nav-col a:active, .nav-col a:hover {
         color: #FFFDD0;
     }
 
