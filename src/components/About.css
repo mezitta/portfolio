@@ -16,8 +16,9 @@
 
 .about-section {
     padding: 0 !important;
-    margin: 0 !important;
+    margin-bottom: 3vh !important;
     display: flex;
+    height: fit-content;
     align-items: center;
     justify-content: center;
 }
@@ -30,8 +31,9 @@
     background-color: #FFFFFF;
     padding: 0 !important;
     border-radius: 2vh;
-    border: 5px solid #FFFFFF;
+    border: 0.75vh solid #FFFFFF;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 4vh;
 }
 
 .tag-header{
@@ -94,7 +96,10 @@
 .skill-header {
     color: #bd216c;
     font-size: 4vh;
+    width: 80%;
+    margin: auto;
     font-weight: bold;
+    padding-bottom: 0.5vh;
     border-bottom: 0.5vh solid #FE6100;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.3);
     margin-bottom: 2vh;
@@ -125,11 +130,24 @@
 
 .about-resume {
     text-align: center;
-    padding: 1em;
+    padding: 0 1em 0 1em;
+    margin-bottom: 3vh;
 }
 
 .about-resume a {
     width: fit-content;
+}
+
+.about-resume h2 {
+    font-size: 4vh;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    border-bottom: 0.5vh solid #FE6100;
+    padding-bottom: 0.5vh;
+    margin-bottom: 2vh;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.3);
+    color: #bd216c;
 }
 
 .about-resume button {
@@ -158,7 +176,7 @@ ul {
 @media only screen and (max-width: 992px) {
     .about-body {
         margin-top: 10vh;
-        padding: 0 10vw;
+        padding: 0 15vw;
         display: block;
     }
     
@@ -173,7 +191,7 @@ ul {
 
 @media only screen and (max-width: 700px) {
     .about-body {
-        padding: 0 8vw 20vh 8vw;
+        padding: 0 8vw 170vh 8vw;
     }
 
     .tag-body {
@@ -183,6 +201,10 @@ ul {
     .skill {
         height: 20vh;
         width: 90%;
+    }
+
+    .skill-header {
+        width: 100%;
     }
 
     .skills-row {
