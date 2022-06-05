@@ -1,24 +1,42 @@
 .about-body {
     width: 100%;
-    padding: 0 20vw 15vh 20vw;
-    height: fit-content;
+    height: 92.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-row {
-    margin-bottom: 4vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.about-section {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-row, .skills-row {
+    padding:0 16vh;
+}   
+
 .name-tag {
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 0 !important;
     border-radius: 2vh;
-    border: 5px solid white;
+    border: 5px solid #FFFFFF;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .tag-header{
     background-color: #FE6100;;
-    color: white;
+    color: #FFFFFF;
     width: 100%;
     text-align: center;
     padding: 0.5em 0;
@@ -51,7 +69,7 @@
     justify-content: center;
     text-align: center;
     margin: auto !important;
-    width: 70%;
+    width: 90%;
 }
 
 .skill-col {
@@ -102,13 +120,11 @@
     align-items: center;
     justify-content: center;
     font-size: 7vh;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #FFFFFF;
 }
 
 .about-resume {
     text-align: center;
-    align-items: center;
-    justify-content: center;
     padding: 1em;
 }
 
@@ -143,6 +159,7 @@ ul {
     .about-body {
         margin-top: 10vh;
         padding: 0 10vw;
+        display: block;
     }
     
     .tag-header h1{
@@ -156,7 +173,7 @@ ul {
 
 @media only screen and (max-width: 700px) {
     .about-body {
-        padding: 0 8vw 15vh 8vw;
+        padding: 0 8vw 20vh 8vw;
     }
 
     .tag-body {
@@ -179,10 +196,20 @@ ul {
     .about-resume button {
         font-size: 3.5vh;
     }
+
+    .about-row, .skills-row {
+        padding: 0;
+    }  
 }
 
 @media only screen and (min-width: 701px) and (max-width: 767px) {
     .skill-left, .skill-right{
         justify-content: center;
     }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1600px) {
+    .about-row, .skills-row {
+        padding:0 6vh !important;
+    }   
 }
