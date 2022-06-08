@@ -8,40 +8,36 @@
 .proj-card.row {
     height: 30vh;
     width: 50vw;
+    overflow: hidden;
+
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-    border: .5vh solid var(--main-color);
+
+    border: .75vh solid var(--main-color);
     border-radius: 3vh;
 }
 
 .picture-box {
-    min-height: 100%;
+    min-height: 30vh;
     min-width: 50%;
-    border-radius: 3vh 0 0 3vh;
     background-color: var(--accent-color);
 }
 
 .desc-box {
-    min-height: 100%;
+    min-height: 30vh;
     min-width: 50%;
-    border-radius: 0 3vh 3vh 0;
     background-color: var(--highlight);
 }
 
 @media  only screen  and (max-width: 700px) {
-    .picture-box {
-        min-height: 50%;
-        min-width: 50%;
-        border-radius: 3vh 3vh 0 0;
-        background-color: var(--accent-color);
+    .proj-card.row {
+        width: 75vw;
     }
     
-    .desc-box {
-        min-height: 50%;
-        min-width: 50%;
-        border-radius: 0 0 3vh 3vh;
-        background-color: var(--highlight);
+    .picture-box, .desc-box {
+        min-height: 15vh;
+        min-width: 50vw;
     }
 }
