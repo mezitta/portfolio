@@ -1,5 +1,7 @@
+@import '../assets/Colors.css';
+
 .bar {
-    background-color: #FFFDD0;
+    background-color: var(--background-color);
     text-align: center;
     position: fixed;
     margin: auto;
@@ -20,13 +22,13 @@
 }
 
 .nav-col a{
-    color: #FE6100;
+    color: var(--main-color);
     text-decoration: none;
     transition: all 0.15s;
 }
 
 .nav-col a:hover {
-    color: #bd216c;
+    color: var(--accent-color);
 }
 
 .nav-icon {
@@ -35,8 +37,8 @@
 
 @media only screen and (min-width: 701px) {
     .nav-col a.active {
-        color: #bd216c;
-        border-bottom: .15em solid #bd216c;
+        color: var(--accent-color);
+        border-bottom: .15em solid var(--accent-color);
     }
 
     .nav-col:hover {
@@ -48,23 +50,23 @@
     .bar {
         position: fixed;
         bottom: 0;
-        background-color: #FE6100;
+        background-color: var(--main-color);
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     }
 
     .nav-col a {
-        color: #FFFDD0;
+        color: var(--background-color);
         transition: all 0.1s;
         opacity: 0.7;
     }
 
     .nav-col a.active {
-        border-bottom: 3px solid #FFFDD0;
+        border-bottom: 3px solid var(--background-color);
         opacity: 1;
     }
 
     .nav-col a:focus, .nav-col a:active, .nav-col a:hover {
-        color: #FFFDD0;
+        color: var(--background-color);
     }
 
     .nav-text{

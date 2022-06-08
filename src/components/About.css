@@ -1,3 +1,5 @@
+@import '../assets/Colors.css';
+
 .about-body {
     width: 100%;
     height: 92.5vh;
@@ -28,17 +30,17 @@
 }   
 
 .name-tag {
-    background-color: #FFFFFF;
+    background-color: var(--highlight);
     padding: 0 !important;
     border-radius: 2vh;
-    border: 0.75vh solid #FFFFFF;
+    border: 0.75vh solid var(--highlight);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     margin-bottom: 4vh;
 }
 
 .tag-header{
-    background-color: #FE6100;;
-    color: #FFFFFF;
+    background-color: var(--main-color);
+    color: var(--highlight);
     width: 100%;
     text-align: center;
     padding: 0.5em 0;
@@ -57,7 +59,7 @@
 }
 
 .tag-body {
-    border-bottom: 3vh solid #FE6100;
+    border-bottom: 3vh solid var(--main-color);
     border-radius: 0 0 2vh 2vh;
     align-items: center;
     justify-content: center;
@@ -87,20 +89,20 @@
     padding: 1em;
     margin: 0 0.25vh;
     margin-bottom: 1vh;
-    background-color: #bd216c;
-    color: #FFFFFF;
+    background-color: var(--accent-color);
+    color: var(--highlight);
     border-radius: 1.25vh;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .skill-header {
-    color: #bd216c;
+    color: var(--accent-color);
     font-size: 4vh;
     width: 80%;
     margin: auto;
     font-weight: bold;
     padding-bottom: 0.5vh;
-    border-bottom: 0.5vh solid #FE6100;
+    border-bottom: 0.5vh solid var(--main-color);
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.3);
     margin-bottom: 2vh;
 }
@@ -125,7 +127,7 @@
     align-items: center;
     justify-content: center;
     font-size: 7vh;
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: 2px solid var(--highlight);
 }
 
 .about-resume {
@@ -143,16 +145,16 @@
     font-weight: bold;
     text-align: left;
     width: 100%;
-    border-bottom: 0.5vh solid #FE6100;
+    border-bottom: 0.5vh solid var(--main-color);
     padding-bottom: 0.5vh;
     margin-bottom: 2vh;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.3);
-    color: #bd216c;
+    color: var(--accent-color);
 }
 
 .about-resume button {
-    background-color: #bd216c;
-    color: #FFFFFF;
+    background-color: var(--accent-color);
+    color: var(--highlight);
     border: none;
     border-radius: 1vh;
     padding: .25em 1em;
@@ -162,9 +164,9 @@
 }
 
 .about-resume button:hover {
-    background-color: #9b1b59;
+    background-color: var(--accent-hover);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    border: 2px solid;
+    border: 0.25vh solid;
 }
 
 ul {
