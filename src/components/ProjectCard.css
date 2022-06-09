@@ -1,13 +1,25 @@
 @import '../assets/Colors.css';
 
+:root {
+    --card-height-lg: 55vh;
+    --card-height-sm: 15vh;
+
+    --card-width-lg: 20vw;
+    --card-width-md: 25vw;
+    --card-width-sm: 50vw;
+    --card-width-xs: 75vw;
+
+    --box-height-lg: 27.5vh;
+}
+
 .card-container {
     margin-bottom: 5vh;
     padding: 0;
 }
 
 .proj-card.row {
-    height: 30vh;
-    width: 50vw;
+    height: var(--card-height-lg);
+    width: var(--card-width-lg);
     overflow: hidden;
 
     display: flex;
@@ -15,29 +27,77 @@
     justify-content: center;
     margin: auto;
 
-    border: .75vh solid var(--main-color);
+    box-shadow: 0 0.25vh 0.5vh rgba(0, 0, 0, 0.3);
     border-radius: 3vh;
 }
 
-.picture-box {
-    min-height: 30vh;
-    min-width: 50%;
+.picture-box, .desc-box {
+    height: var(--box-height-lg);
     background-color: var(--accent-color);
 }
 
-.desc-box {
-    min-height: 30vh;
-    min-width: 50%;
-    background-color: var(--highlight);
+.picture-box.col-12 {
+    padding: 0;
 }
 
-@media  only screen  and (max-width: 700px) {
+.desc-box {
+    background-color: var(--highlight);
+    z-index: 1;
+}
+
+.display-picture {
+    position: absolute;
+}
+
+.picture-link {
+    height: var(--card-height-lg);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 50%) top;
+    background-size: 200% 200%;
+    transition: all 0.3s;
+}
+
+.picture-link a {
+    color: rgba(255, 255, 255, 0);
+    font-size: 5vh;
+    z-index: 0;
+    transition: all 0.2s;
+}
+
+.picture-link:hover {
+    bottom: 0%;
+    height: 27.5vh;
+    background-position: bottom;
+}
+
+.picture-link:hover a {
+    color: var(--highlight)
+}
+
+@media only screen and (max-width: 1200px) {
     .proj-card.row {
-        width: 75vw;
+        width: var(--card-width-md);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .proj-card.row {
+        width: var(--card-width-sm);
+    }
+}
+
+@media only screen  and (max-width: 700px) {
+    .proj-card.row {
+        width: var(--card-width-xs);
     }
     
     .picture-box, .desc-box {
-        min-height: 15vh;
         min-width: 50vw;
     }
 }

@@ -5,15 +5,24 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+
 const ProjectCard = ({picture, description, link}) => {
     return (
         <Container fluid className="card-container">
             <Row className="proj-card">
-                <Col xs={12} md={6} className="picture-box">
-                    {picture}
-                    {link}
+                <Col xs={12} className="picture-box">
+                    <div className="display-picture">
+                        {picture}
+                    </div>
+                    <div className="picture-link">
+                        <a target="_blank" rel="noreferrer" href={link}>
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                    </div>
                 </Col>
-                <Col xs={12} md={6} className="desc-box">
+                <Col xs={12} className="desc-box">
                     <div >
                         {description}
                     </div>
