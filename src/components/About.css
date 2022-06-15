@@ -39,7 +39,7 @@
 }
 
 .tag-header{
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
     color: var(--highlight);
     width: 100%;
     text-align: center;
@@ -59,7 +59,7 @@
 }
 
 .tag-body {
-    border-bottom: 3vh solid var(--main-color);
+    border-bottom: 3vh solid var(--accent-color);
     border-radius: 0 0 2vh 2vh;
     align-items: center;
     justify-content: center;

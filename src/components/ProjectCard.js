@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
-const ProjectCard = ({picture, description, link}) => {
+const ProjectCard = ({picture, title, description, link}) => {
     return (
         <Container fluid className="card-container">
             <Row className="proj-card">
@@ -24,7 +24,8 @@ const ProjectCard = ({picture, description, link}) => {
                 </Col>
                 <Col xs={12} className="desc-box">
                     <div >
-                        {description}
+                        <h2>{title}</h2>
+                        <p>{description}</p>
                     </div>
                 </Col>
             </Row>
