@@ -9,11 +9,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
+import { motion } from 'framer-motion'
+
 import './Home.css'
 
 const Home = () => {
     return (
-        <div className="home-body">
+        <motion.div className="home-body"
+            initial = {{width: 0, opacity: 0}}
+            animate = {{width: "100%", opacity: 1}}
+            exit = {{x: window.innerWidth, transition: {duration: 0.1}}}
+        >
            <Container fluid>
                <Row className="home-row">
                     <Col sm={12} lg={6} className="home-left">
@@ -45,7 +51,7 @@ const Home = () => {
                     <Col sm={6} className="home-right" />
                </Row>
            </Container>
-        </div>
+        </motion.div>
     )
 }
 

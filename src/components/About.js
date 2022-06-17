@@ -3,6 +3,8 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import { motion } from 'framer-motion'
+
 import Resume from '../assets/mezitta2022Resume.pdf'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -17,7 +19,11 @@ import './About.css'
 
 const About = () => {
     return (
-        <div className="about-body">
+        <motion.div className="about-body"
+            initial = {{width: 0, opacity: 0}}
+            animate = {{width: "100%", opacity: 1}}
+            exit = {{x: window.innerWidth, transition: {duration: 0.1}}}
+        >
             <Container fluid>
                 <Row>
                     <Col xs={12} lg={6} className="about-section">
@@ -90,7 +96,7 @@ const About = () => {
                     
                 </Row>
             </Container>
-        </div>
+        </motion.div>
     )
 }
 
