@@ -10,6 +10,7 @@ import ProjectCard from './ProjectCard'
 import { huskyDesc, lbfeDesc, portDesc } from './ProjDescs.js'
 
 const Projects = () => {
+    
     return (
             <motion.div className="projects"
                 initial = {{width: 0, opacity: 0}}
