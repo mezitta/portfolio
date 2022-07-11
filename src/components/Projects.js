@@ -10,7 +10,7 @@ import './Projects.css'
 import ProjectCard from './ProjectCard'
 import { huskyDesc, lbfeDesc, portDesc } from './ProjDescs.js'
 
-const Projects = () => {
+const Projects = ({updateNav}) => {
     
     const [navState, setNavState] = useState(true)
 
@@ -28,7 +28,8 @@ const Projects = () => {
                                 link = "https://github.com/mezitta/Husky-Review"
                                 title = "Husky Review"
                                 description = { huskyDesc }
-                                navState = {navState => setNavState(navState)} 
+                                navState = {navState => setNavState(navState)}
+                                updateNav = {updateNav} 
                             />
                         </Col>
                         <Col xs={12} md={4}>
@@ -38,6 +39,7 @@ const Projects = () => {
                                 title = "LBFE"
                                 description = { lbfeDesc }
                                 navState = {navState => setNavState(navState)}
+                                updateNav = {updateNav}
                             />
                         </Col>
                         <Col xs={12} md={4}>
@@ -47,10 +49,10 @@ const Projects = () => {
                                 title = "Portfolio"
                                 description = { portDesc }
                                 navState = {navState => setNavState(navState)}
+                                updateNav = {updateNav}
                             />
                         </Col>
                     </Row>
-                    <h1>{console.log({navState})}</h1>
                 </Container>
             </motion.div>
     )

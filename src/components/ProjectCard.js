@@ -11,9 +11,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 import ProjectModal from './ProjectModal'
-import { filterProps } from 'framer-motion'
+// import { filterProps } from 'framer-motion'
 
-const ProjectCard = ({picture, title, description, link, navState}) => {
+const ProjectCard = ({picture, title, description, link, navState, updateNav}) => {
 
     const [openModal, setOpenModal] = useState(false)
 
@@ -41,6 +41,7 @@ const ProjectCard = ({picture, title, description, link, navState}) => {
                                 onClick={() => {
                                 setOpenModal(true)
                                 navState(false)
+                                updateNav(false)
                             }}>Learn More</button>
                         </div>
                     </Col>
@@ -54,6 +55,7 @@ const ProjectCard = ({picture, title, description, link, navState}) => {
                 link = {link}
                 modalState = {setOpenModal}
                 navState = {navState}
+                updateNav = {updateNav}
             />}
         </div>
     )

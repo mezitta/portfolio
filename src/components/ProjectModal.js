@@ -2,17 +2,17 @@ import React from "react";
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+// import Col from 'react-bootstrap/Col'
 
 import './ProjectModal.css'
 
-const ProjectModal = ({picture, title, description, link, modalState, navState}) => {
+const ProjectModal = ({picture, title, description, link, modalState, navState, updateNav}) => {
     return (
         <div className="modalBackground">
             <Container className="modalBody">
                 <Row>
                     <button
-                        onClick={() => {modalState(false); navState(true)}}
+                        onClick={() => {modalState(false); navState(true); updateNav(true)}}
                         >x
                     </button>
                  </Row>
