@@ -13,8 +13,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import ProjectModal from './ProjectModal'
 // import { filterProps } from 'framer-motion'
 
-const ProjectCard = ({picture, title, description, link, navState, updateNav}) => {
-
+const ProjectCard = ({picture, title, description, link, navState}) => {
     const [openModal, setOpenModal] = useState(false)
 
     return (
@@ -41,7 +40,6 @@ const ProjectCard = ({picture, title, description, link, navState, updateNav}) =
                                 onClick={() => {
                                 setOpenModal(true)
                                 navState(false)
-                                updateNav(false)
                             }}>Learn More</button>
                         </div>
                     </Col>
@@ -55,7 +53,6 @@ const ProjectCard = ({picture, title, description, link, navState, updateNav}) =
                 link = {link}
                 modalState = {setOpenModal}
                 navState = {navState}
-                updateNav = {updateNav}
             />}
         </div>
     )

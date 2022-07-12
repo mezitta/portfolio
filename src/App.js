@@ -13,22 +13,21 @@ import './App.css'
 
 const App = () => {
   const location = useLocation();
-  const [updateNav, setUpdateNav] = useState(true)
+  const [navState, setNavState] = useState(true)
 
   return (
     <div className="App">
-      {updateNav && <NavBar />}
+      {navState && <NavBar />}
       <div className='App-body'>
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects updateNav = {updateNav => setUpdateNav(updateNav)}/>} />
+            <Route path="/projects" element={<Projects  navState = {navState => setNavState(navState)}/>} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </AnimatePresence>
       </div>
-      {console.log("app " + updateNav)}
     </div>
   );
 }

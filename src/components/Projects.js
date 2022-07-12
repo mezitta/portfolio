@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+// import { useState } from 'react'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -10,10 +10,8 @@ import './Projects.css'
 import ProjectCard from './ProjectCard'
 import { huskyDesc, lbfeDesc, portDesc } from './ProjDescs.js'
 
-const Projects = ({updateNav}) => {
+const Projects = ({navState}) => {
     
-    const [navState, setNavState] = useState(true)
-
     return (
             <motion.div className="projects"
                 initial = {{width: 0, opacity: 0}}
@@ -28,8 +26,7 @@ const Projects = ({updateNav}) => {
                                 link = "https://github.com/mezitta/Husky-Review"
                                 title = "Husky Review"
                                 description = { huskyDesc }
-                                navState = {navState => setNavState(navState)}
-                                updateNav = {updateNav} 
+                                navState = {navState}
                             />
                         </Col>
                         <Col xs={12} md={4}>
@@ -38,8 +35,7 @@ const Projects = ({updateNav}) => {
                                 link = "https://github.com/MTUHIDE/little-brothers"
                                 title = "LBFE"
                                 description = { lbfeDesc }
-                                navState = {navState => setNavState(navState)}
-                                updateNav = {updateNav}
+                                navState = {navState}
                             />
                         </Col>
                         <Col xs={12} md={4}>
@@ -48,8 +44,7 @@ const Projects = ({updateNav}) => {
                                 link = "https://github.com/mezitta/portfolio"
                                 title = "Portfolio"
                                 description = { portDesc }
-                                navState = {navState => setNavState(navState)}
-                                updateNav = {updateNav}
+                                navState = {navState}
                             />
                         </Col>
                     </Row>

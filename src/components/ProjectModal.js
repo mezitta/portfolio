@@ -6,13 +6,13 @@ import Row from 'react-bootstrap/Row'
 
 import './ProjectModal.css'
 
-const ProjectModal = ({picture, title, description, link, modalState, navState, updateNav}) => {
+const ProjectModal = ({picture, title, description, link, modalState, navState}) => {
     return (
         <div className="modalBackground">
             <Container className="modalBody">
                 <Row>
                     <button
-                        onClick={() => {modalState(false); navState(true); updateNav(true)}}
+                        onClick={() => {modalState(false); navState(true)}}
                         >x
                     </button>
                  </Row>
