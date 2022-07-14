@@ -80,6 +80,18 @@
     color: var(--highlight)
 }
 
+.modalInfo {
+    border: none;
+    background: none;
+    color: blue;
+    text-decoration: underline;
+    transition: all ease-in-out 0.3s;
+}
+
+.modalInfo:hover {
+    color: rgb(0, 0, 133);
+}
+
 @media only screen and (max-width: 1200px) {
     .proj-card.row {
         width: var(--card-width-md);

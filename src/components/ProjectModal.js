@@ -10,13 +10,15 @@ const ProjectModal = ({picture, title, description, link, modalState, navState})
     return (
         <div className="modalBackground">
             <Container className="modalBody">
-                <Row>
+                <Row className="btnRow">
                     <button
                         onClick={() => {modalState(false); navState(true)}}
-                        >x
+                        className="modalBtn"
+                    >
+                        x
                     </button>
                  </Row>
-                <Row>{title}</Row>
+                <Row><h2>{title}</h2></Row>
                 <Row>{picture}</Row>
                 <Row>{description}</Row>
                 <Row>{link}</Row>

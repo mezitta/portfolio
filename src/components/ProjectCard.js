@@ -36,7 +36,7 @@ const ProjectCard = ({picture, title, description, link, navState}) => {
                             <p>{description}</p>
                         </div>
                         <div>
-                            <button className="modalBtn"
+                            <button className="modalInfo"
                                 onClick={() => {
                                 setOpenModal(true)
                                 navState(false)

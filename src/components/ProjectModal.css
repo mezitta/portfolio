@@ -12,8 +12,47 @@
     z-index: 99 !important;
 }
 
-.modalBody {
-    height: 70vh;
-    width: 30vw;
-    background-color: green;
+.modalBody.container {
+    height: 85vh;
+    width: 40vw;
+    border-radius: 3vh;
+    box-shadow: 0 0.25vh 0.5vh rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255);
+}
+
+.btnRow {
+    align-items: end;
+    justify-content: end;
+    padding: 0.5em;
+}
+
+.modalBtn {
+    background: none;
+    border: none;
+    width: 30px !important;
+    text-align: center; 
+    font-size: 2vh;
+    font-weight: bold;
+    color:rgba(54, 54, 54, 0.5);
+    transition: all ease-in-out 0.2s;
+}
+
+.modalBtn:hover {
+    color:rgba(0, 0, 0, 1)
+}
+
+@media only screen and (max-width: 1100px) {
+    .modalBody.container {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .modalBody.container {
+        width: 90vw;
+    }
+
+    .modalBtn {
+        font-size: 2.5vh;
+    }
 }
