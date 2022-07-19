@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 
 import './Projects.css'
 import ProjectCard from './ProjectCard'
+import ScrollToTop from '../scrollToTop';
 import { huskyDesc, lbfeDesc, portDesc } from './ProjDescs.js'
 
 const Projects = ({navState}) => {
@@ -18,6 +19,7 @@ const Projects = ({navState}) => {
                 animate = {{width: "100%", opacity: 1}}
                 exit = {{x: window.innerWidth, transition: {duration: 0.1}}}
             >
+                <ScrollToTop />
                 <Container fluid className="projects-body">
                     <Row>
                         <Col xs={12} md={4}>

@@ -19,25 +19,25 @@ const NavBar = () => {
             <nav>
                 <Row className="nav-row">
                     <Col className="nav-col" xl={1} xs={3}>
-                        <NavLink to="/" onClick={document.getElementById("App-body").scroll(0,0)}>
+                        <NavLink to="/home">
                             <span className="nav-text">Home</span>
-                            <span className="nav-icon"><FontAwesomeIcon icon={faHome} /></span>
+                            <span className="nav-icon"><FontAwesomeIcon icon={faHome} /></span> 
                         </NavLink>
                     </Col>
                     <Col className="nav-col" xl={1} xs={3}>
-                        <NavLink to="/projects" onClick={document.getElementById("App-body").scroll(0,0)}> 
+                        <NavLink to="/projects" > 
                             <span className="nav-text">Projects</span>
                             <span className="nav-icon"><FontAwesomeIcon icon={faFolderOpen} /></span>
                         </NavLink>
                     </Col>
                     <Col className="nav-col" xl={1} xs={3}>
-                        <NavLink to="/about" onClick={document.getElementById("App-body").scroll(0,0)}>
+                        <NavLink to="/about" >
                             <span className="nav-text">About</span>
                             <span className="nav-icon"><FontAwesomeIcon icon={faFileInvoice} /></span>
                         </NavLink>
                     </Col>
                     <Col className="nav-col" xl={1} xs={3}>
-                        <NavLink to="/contact" onClick={document.getElementById("App-body").scroll(0,0)}>
+                        <NavLink to="/contact" >
                             <span className="nav-text">Contact</span>
                             <span className="nav-icon"><FontAwesomeIcon icon={faEnvelope} /></span>
                         </NavLink>
