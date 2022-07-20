@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 import './Projects.css'
 import ProjectCard from './ProjectCard'
 import ScrollToTop from '../scrollToTop';
-import { huskyDesc, lbfeDesc, portDesc } from './ProjDescs.js'
+import { huskyDesc, huskyOvrw, huskyGoals, huskyImprv, lbfeDesc, lbfeOvrw, lbfeGoals, lbfeImprv, portDesc, portOvrw, portGoals, portImprv } from './ProjDescs.js'
 
 const Projects = ({navState}) => {
     
@@ -28,7 +28,10 @@ const Projects = ({navState}) => {
                                 link = "https://github.com/mezitta/Husky-Review"
                                 title = "Husky Review"
                                 description = { huskyDesc }
-                                navState = {navState}
+                                overview = { huskyOvrw }
+                                goals = { huskyGoals }
+                                improvements = { huskyImprv }
+                                navState = { navState }
                             />
                         </Col>
                         <Col xs={12} md={4}>
@@ -37,7 +40,10 @@ const Projects = ({navState}) => {
                                 link = "https://github.com/MTUHIDE/little-brothers"
                                 title = "LBFE"
                                 description = { lbfeDesc }
-                                navState = {navState}
+                                overview = { lbfeOvrw }
+                                goals = { lbfeGoals }
+                                improvements = { lbfeImprv }
+                                navState = { navState }
                             />
                         </Col>
                         <Col xs={12} md={4}>
@@ -46,7 +52,10 @@ const Projects = ({navState}) => {
                                 link = "https://github.com/mezitta/portfolio"
                                 title = "Portfolio"
                                 description = { portDesc }
-                                navState = {navState}
+                                overview = { portOvrw }
+                                goals = { portGoals }
+                                improvements = { portImprv }
+                                navState = { navState }
                             />
                         </Col>
                     </Row>
