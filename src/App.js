@@ -21,7 +21,7 @@ const App = () => {
       <div className='App-body' id="App-body">
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects  navState = {navState => setNavState(navState)}/>} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />

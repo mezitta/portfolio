@@ -19,7 +19,7 @@ const NavBar = () => {
             <nav>
                 <Row className="nav-row">
                     <Col className="nav-col" xl={1} xs={3}>
-                        <NavLink to="/home">
+                        <NavLink to="/">
                             <span className="nav-text">Home</span>
                             <span className="nav-icon"><FontAwesomeIcon icon={faHome} /></span> 
                         </NavLink>
