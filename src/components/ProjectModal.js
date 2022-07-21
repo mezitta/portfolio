@@ -20,22 +20,26 @@ const ProjectModal = ({picture, title, link, modalState, navState, overview, goa
                  </Row>
                 <Row><h2>{title}</h2></Row>
                 <Row>{picture}</Row>
-                <Row><h3>Overview</h3>{overview}</Row>
+                <Row><h3>Overview</h3><p>{overview}</p></Row>
                 <Row>
                     <h3>Goals</h3>
-                    <ul>
-                        {goals.map((goal) => {
-                            return <li>{goal}</li>
-                        })}
-                    </ul>
+                    <p>
+                        <ul>
+                            {goals.map((goal) => {
+                                return <li>{goal}</li>
+                            })}
+                        </ul>
+                    </p>
                 </Row>
                 <Row>
                     <h3>What Could Be Better</h3>
-                    <ul>
-                        {improvements.map((improvement) => {
-                            return <li>{improvement}</li>
-                        })}
-                    </ul>
+                    <p>
+                        <ul>
+                            {improvements.map((improvement) => {
+                                return <li>{improvement}</li>
+                            })}
+                        </ul>
+                    </p>
                 </Row>
                 <Row><a target="_blank" rel="noreferrer" href={link}>Repo</a></Row>
             </Container>

@@ -80,10 +80,19 @@
     color: var(--highlight)
 }
 
+.desc-txt {
+    height: 85%;
+}
+
+.moreButton {
+    padding-right: 15px;
+}
+
 .modalInfo {
     border: none;
     background: none;
     color: blue;
+    text-align: right;
     text-decoration: underline;
     transition: all ease-in-out 0.3s;
 }

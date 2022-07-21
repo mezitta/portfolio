@@ -31,17 +31,19 @@ const ProjectCard = ({picture, title, description, link, navState, overview, goa
                         </div>
                     </Col>
                     <Col xs={12} className="desc-box">
-                        <div>
+                        <div className="desc-txt">
                             <h2>{title}</h2>
                             <p>{description}</p>
                         </div>
-                        <div>
+                        <Row className="moreButton">
                             <button className="modalInfo"
                                 onClick={() => {
                                 setOpenModal(true)
                                 navState(false)
-                            }}>Learn More</button>
-                        </div>
+                                }}>
+                                Learn More
+                            </button>
+                        </Row>
                     </Col>
                 </Row>
             </Container>
