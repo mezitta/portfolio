@@ -31,13 +31,16 @@
     border-radius: 3vh;
 }
 
-.picture-box, .desc-box {
+.desc-box {
     height: var(--box-height-lg);
     background-color: var(--accent-color);
 }
 
 .picture-box.col-12 {
+    height: var(--box-height-lg);
     padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .desc-box {
@@ -47,6 +50,11 @@
 
 .display-picture {
     position: absolute;
+    width: var(--card-width-lg);
+    height: var(--box-height-lg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
 }
 
 .picture-link {
@@ -102,19 +110,19 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .proj-card.row {
+    .proj-card.row, .display-picture {
         width: var(--card-width-md);
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .proj-card.row {
+    .proj-card.row, .display-picture {
         width: var(--card-width-sm);
     }
 }
 
 @media only screen  and (max-width: 700px) {
-    .proj-card.row {
+    .proj-card.row, .display-picture {
         width: var(--card-width-xs);
     }
     

@@ -8,7 +8,17 @@ import { motion } from 'framer-motion'
 
 import './Projects.css'
 import ProjectCard from './ProjectCard'
-import ScrollToTop from '../scrollToTop';
+import ScrollToTop from '../scrollToTop'
+
+import huskyRvwPic from '../assets/huskylogoyellow.png'
+import backHP from '../assets/mtu_campus.png'
+
+import lbfePic from '../assets/LBFE_LOGOV_red_upmichigan.png'
+import backLbfe from '../assets/hancock.png'
+
+import portPic from '../assets/homeshark.svg'
+import backPort from '../assets/stjoe.png'
+
 import { huskyDesc, huskyOvrw, huskyGoals, huskyImprv, lbfeDesc, lbfeOvrw, lbfeGoals, lbfeImprv, portDesc, portOvrw, portGoals, portImprv } from './ProjDescs.js'
 
 const Projects = ({navState}) => {
@@ -24,7 +34,8 @@ const Projects = ({navState}) => {
                     <Row>
                         <Col xs={12} md={4}>
                             <ProjectCard 
-                                picture = "picture"
+                                picture = { huskyRvwPic }
+                                backPicture = { backHP }
                                 link = "https://github.com/mezitta/Husky-Review"
                                 title = "Husky Review"
                                 description = { huskyDesc }
@@ -36,7 +47,8 @@ const Projects = ({navState}) => {
                         </Col>
                         <Col xs={12} md={4}>
                             <ProjectCard 
-                                picture = "picture"
+                                picture = { lbfePic }
+                                backPicture = { backLbfe }
                                 link = "https://github.com/MTUHIDE/little-brothers"
                                 title = "LBFE"
                                 description = { lbfeDesc }
@@ -48,7 +60,8 @@ const Projects = ({navState}) => {
                         </Col>
                         <Col xs={12} md={4}>
                             <ProjectCard 
-                                picture = "picture"
+                                picture = { portPic }
+                                backPicture = { backPort }
                                 link = "https://github.com/mezitta/portfolio"
                                 title = "Portfolio"
                                 description = { portDesc }

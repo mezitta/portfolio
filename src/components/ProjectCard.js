@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 import './ProjectCard.css'
 
+
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -13,16 +14,16 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import ProjectModal from './ProjectModal'
 // import { filterProps } from 'framer-motion'
 
-const ProjectCard = ({picture, title, description, link, navState, overview, goals, improvements}) => {
+const ProjectCard = ({picture, backPicture, title, description, link, navState, overview, goals, improvements}) => {
     const [openModal, setOpenModal] = useState(false)
 
     return (
         <div>
             <Container fluid className="card-container">
                 <Row className="proj-card">
-                    <Col xs={12} className="picture-box">
-                        <div className="display-picture">
-                            {picture}
+                    <Col xs={12} className="picture-box" style={{ backgroundImage: `url(${backPicture})` }}>
+                        <div className="display-picture" style={{ backgroundImage: `url(${picture})` }}>
+                            {/* {picture} */}
                         </div>
                         <div className="picture-link">
                             <a target="_blank" rel="noreferrer" href={link}>
