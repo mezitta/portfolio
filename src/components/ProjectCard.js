@@ -10,6 +10,7 @@ import Col from 'react-bootstrap/Col'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faCircleInfo} from "@fortawesome/free-solid-svg-icons"
 
 import ProjectModal from './ProjectModal'
 // import { filterProps } from 'framer-motion'
@@ -42,7 +43,7 @@ const ProjectCard = ({p1, p2, p3, p4, picture, backPicture, title, description, 
                                 setOpenModal(true)
                                 navState(false)
                                 }}>
-                                Learn More
+                                 Learn More <FontAwesomeIcon icon={faCircleInfo}/>
                             </button>
                         </Row>
                     </Col>
