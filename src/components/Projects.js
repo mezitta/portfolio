@@ -12,9 +12,17 @@ import ScrollToTop from '../scrollToTop'
 
 import huskyRvwPic from '../assets/huskylogoyellow.png'
 import backHP from '../assets/mtu_campus.png'
+import hrp1 from '../assets/hrp1.png'
+import hrp2 from '../assets/hrp2.png'
+import hrp3 from '../assets/hrp3.png'
+import hrp4 from '../assets/hrp4.png'
 
 import lbfePic from '../assets/LBFE_LOGOV_red_upmichigan.png'
 import backLbfe from '../assets/hancock.png'
+import lbfep1 from '../assets/lbfep1.png'
+import lbfep2 from '../assets/lbfep2.png'
+import lbfep3 from '../assets/lbfep3.png'
+import lbfep4 from '../assets/lbfep4.png'
 
 import portPic from '../assets/homeshark.svg'
 import backPort from '../assets/stjoe.png'
@@ -36,6 +44,10 @@ const Projects = ({navState}) => {
                             <ProjectCard 
                                 picture = { huskyRvwPic }
                                 backPicture = { backHP }
+                                p1 = {hrp1}
+                                p2 = {hrp2}
+                                p3 = {hrp3}
+                                p4 = {hrp4}
                                 link = "https://github.com/mezitta/Husky-Review"
                                 title = "Husky Review"
                                 description = { huskyDesc }
@@ -49,6 +61,10 @@ const Projects = ({navState}) => {
                             <ProjectCard 
                                 picture = { lbfePic }
                                 backPicture = { backLbfe }
+                                p1 = {lbfep1}
+                                p2 = {lbfep2}
+                                p3 = {lbfep3}
+                                p4 = {lbfep4}
                                 link = "https://github.com/MTUHIDE/little-brothers"
                                 title = "LBFE"
                                 description = { lbfeDesc }
@@ -62,6 +78,10 @@ const Projects = ({navState}) => {
                             <ProjectCard 
                                 picture = { portPic }
                                 backPicture = { backPort }
+                                p1 = ""
+                                p2 = ""
+                                p3 = ""
+                                p4 = ""
                                 link = "https://github.com/mezitta/portfolio"
                                 title = "Portfolio"
                                 description = { portDesc }
