@@ -35,7 +35,7 @@ const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overvi
                         </ul>
                     </div>
                 </Row>
-                <Row><img src = {p3} alt = "third"/></Row>
+                <Row className="mobileRow"><img src = {p3} alt = "third" className="mobilePic"/></Row>
                 <Row>
                     <h3>What Could Be Better</h3>
                     <div>
@@ -46,7 +46,7 @@ const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overvi
                         </ul>
                     </div>
                 </Row>
-                <Row><img src = {p4} alt = "fourth"/></Row>
+                <Row className="mobileRow"><img src = {p4} alt = "fourth" className="mobilePic"/></Row>
                 <Row><a target="_blank" rel="noreferrer" href={link}>Repo</a></Row>
             </Container>
         </div>

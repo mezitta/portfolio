@@ -1,5 +1,5 @@
 import React from 'react'
-// import { useState } from 'react'
+// import { useState, useEffect } from 'react'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -14,7 +14,7 @@ import huskyRvwPic from '../assets/huskylogoyellow.png'
 import backHP from '../assets/mtu_campus.png'
 import hrp1 from '../assets/hrp1.png'
 import hrp2 from '../assets/hrp2.png'
-import hrp3 from '../assets/hrp3.png'
+// import hrp3 from '../assets/hrp2.png'
 import hrp4 from '../assets/hrp4.png'
 
 import lbfePic from '../assets/LBFE_LOGOV_red_upmichigan.png'
@@ -30,7 +30,6 @@ import backPort from '../assets/stjoe.png'
 import { huskyDesc, huskyOvrw, huskyGoals, huskyImprv, lbfeDesc, lbfeOvrw, lbfeGoals, lbfeImprv, portDesc, portOvrw, portGoals, portImprv } from './ProjDescs.js'
 
 const Projects = ({navState}) => {
-    
     return (
             <motion.div className="projects"
                 initial = {{width: 0, opacity: 0}}
@@ -39,6 +38,8 @@ const Projects = ({navState}) => {
             >
                 <ScrollToTop />
                 <Container fluid className="projects-body">
+                    {/* <img src = {portPic} width = {isPortrait(portPic)} alt="butts"/> */}
+                    {/* {console.log(isPortrait(portPic))} */}
                     <Row>
                         <Col xs={12} md={4}>
                             <ProjectCard 
@@ -46,7 +47,7 @@ const Projects = ({navState}) => {
                                 backPicture = { backHP }
                                 p1 = {hrp1}
                                 p2 = {hrp2}
-                                p3 = {hrp3}
+                                p3 = "{hrp3}"
                                 p4 = {hrp4}
                                 link = "https://github.com/mezitta/Husky-Review"
                                 title = "Husky Review"

@@ -27,6 +27,18 @@
     display: none;
 }
 
+.mobileRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+img.mobilePic {
+    width: 50%;
+    text-align: center;
+}
+
 .btnRow {
     align-items: end;
     justify-content: end;
@@ -51,6 +63,10 @@
 @media only screen and (max-width: 1100px) {
     .modalBody.container {
         width: 70vw;
+    }
+
+    img.mobilePic {
+        width: 100%;
     }
 }
 
