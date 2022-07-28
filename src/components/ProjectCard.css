@@ -85,7 +85,11 @@
 }
 
 .picture-link:hover a {
-    color: var(--highlight)
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.gitIcon:hover {
+    color: var(--highlight);
 }
 
 .desc-txt {

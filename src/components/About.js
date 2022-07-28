@@ -14,6 +14,8 @@ import { faBootstrap } from "@fortawesome/free-brands-svg-icons"
 import { faJs } from "@fortawesome/free-brands-svg-icons"
 import { faJava } from "@fortawesome/free-brands-svg-icons"
 import { faC } from "@fortawesome/free-solid-svg-icons";
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
 
 import './About.css'
 
@@ -71,7 +73,11 @@ const About = () => {
                                 </Col>
                                 <Col xs={6} md={4} className="skill-col skill-left">
                                     <div className="skill">
-                                        <div className="skill-img"><FontAwesomeIcon icon={faJs} /></div>
+                                        <div className="skill-img">
+                                            <FontAwesomeIcon icon={faCss3Alt} className="frontEnd" id="fe1"/>
+                                            <FontAwesomeIcon icon={faJs} className="frontEnd" id="fe2"/>
+                                            <FontAwesomeIcon icon={faHtml5} className="frontEnd" id="fe3"/>
+                                        </div>
                                         <li><p>Front-End</p></li>
                                     </div>
                                 </Col>

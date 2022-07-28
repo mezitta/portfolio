@@ -38,8 +38,6 @@ const Projects = ({navState}) => {
             >
                 <ScrollToTop />
                 <Container fluid className="projects-body">
-                    {/* <img src = {portPic} width = {isPortrait(portPic)} alt="butts"/> */}
-                    {/* {console.log(isPortrait(portPic))} */}
                     <Row>
                         <Col xs={12} md={4}>
                             <ProjectCard 

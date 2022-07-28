@@ -3,7 +3,6 @@ import { useState } from 'react'
 
 import './ProjectCard.css'
 
-
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -13,7 +12,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faCircleInfo} from "@fortawesome/free-solid-svg-icons"
 
 import ProjectModal from './ProjectModal'
-// import { filterProps } from 'framer-motion'
 
 const ProjectCard = ({p1, p2, p3, p4, picture, backPicture, title, description, link, navState, overview, goals, improvements}) => {
     const [openModal, setOpenModal] = useState(false)
@@ -28,7 +26,7 @@ const ProjectCard = ({p1, p2, p3, p4, picture, backPicture, title, description, 
                         </div>
                         <div className="picture-link">
                             <a target="_blank" rel="noreferrer" href={link}>
-                                <FontAwesomeIcon icon={faGithub} />
+                                <FontAwesomeIcon icon={faGithub} className="gitIcon"/>
                             </a>
                         </div>
                     </Col>
