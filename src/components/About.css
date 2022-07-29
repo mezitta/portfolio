@@ -134,8 +134,8 @@
     position: absolute;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 6s;
-    animation-duration: 6s;
+    -webkit-animation-duration: 9s;
+    animation-duration: 9s;
     animation-name: fade;
 }
 
@@ -154,13 +154,13 @@
 }
 
 #fe2 {
-    -webkit-animation-delay: -4s;
-    animation-delay: -4s;
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
 }
 
 #fe3 {
-    -webkit-animation-delay: -2s;
-    animation-delay: -2s;
+    -webkit-animation-delay: -3s;
+    animation-delay: -3s;
 }
 
 .about-resume {

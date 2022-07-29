@@ -96,6 +96,10 @@
     height: 85%;
 }
 
+.desc-txt h2 {
+    padding-top: 0.3em;
+}
+
 .moreButton {
     padding-right: 15px;
 }

@@ -60,6 +60,26 @@ img.mobilePic {
     color:rgba(0, 0, 0, 1)
 }
 
+.projTitle {
+    text-align: center;
+}
+
+.subSection {
+    padding-top: 1em;
+    border-bottom: 1px solid;
+}
+
+.repoLink {
+    text-align: center;
+    font-size: 2vh;
+    padding: 1.5em;
+}
+
+img {
+    padding: 0 !important;
+    box-shadow: 0 0.25vh 0.5vh rgba(0, 0, 0, 0.3);
+}
+
 @media only screen and (max-width: 1100px) {
     .modalBody.container {
         width: 70vw;

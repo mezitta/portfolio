@@ -4,6 +4,9 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 // import Col from 'react-bootstrap/Col'
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+
 import './ProjectModal.css'
 
 const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overview, goals, improvements}) => {
@@ -18,15 +21,15 @@ const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overvi
                         x
                     </button>
                  </Row>
-                <Row><h2>{title}</h2></Row>
+                <Row className="projTitle"><h2 >{title}</h2></Row>
                 <Row><img src = {p1} alt = "main page"/></Row>
                 <Row>
-                    <h3>Overview</h3>
+                    <h3 className="subSection">Overview</h3>
                     <p>{overview}</p>
                 </Row>
                 <Row><img src = {p2} alt = "second"/></Row>
                 <Row>
-                    <h3>Goals</h3>
+                    <h3 className="subSection">Goals</h3>
                     <div>
                         <ul>
                             {goals.map((goal) => {
@@ -37,7 +40,7 @@ const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overvi
                 </Row>
                 <Row className="mobileRow"><img src = {p3} alt = "third" className="mobilePic"/></Row>
                 <Row>
-                    <h3>What Could Be Better</h3>
+                    <h3 className="subSection">What Could Be Better</h3>
                     <div>
                         <ul>
                             {improvements.map((improvement) => {
@@ -47,7 +50,11 @@ const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overvi
                     </div>
                 </Row>
                 <Row className="mobileRow"><img src = {p4} alt = "fourth" className="mobilePic"/></Row>
-                <Row><a target="_blank" rel="noreferrer" href={link}>Repo</a></Row>
+                <Row className="repoLink">
+                    <a target="_blank" rel="noreferrer" href={link}>
+                        <FontAwesomeIcon icon={faGithub} className="gitIcon"/> Repo
+                    </a>
+                </Row>
             </Container>
         </div>
     )

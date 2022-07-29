@@ -13,6 +13,10 @@
     justify-content: center;
 }
 
+
+
+
+
 @media only screen and (max-width: 767px) {
     .projects-body, .projects {
         height: 200vh;
