@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -10,8 +11,25 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import './ProjectModal.css'
 
 const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overview, goals, improvements}) => {
+
+    useEffect(() => {
+        
+        function handleKeydown (event) {
+            if(event.key === "Escape") {
+                modalState(false)
+                navState(true)
+            }
+        }
+
+        window.addEventListener('keydown', handleKeydown)
+
+        return () => {
+            window.removeEventListener('keydown', handleKeydown)
+        };
+    }, []);
+
     return (
-        <div className="modalBackground">
+        <div className="modalBackground" onClick={() => {modalState(false); navState(true)}}>
             <Container className="modalBody">
                 <Row className="btnRow">
                     <button

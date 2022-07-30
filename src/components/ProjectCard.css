@@ -102,13 +102,17 @@
 
 .moreButton {
     padding-right: 15px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
 }
 
-.modalInfo {
+button.modalInfo {
     border: none;
     background: none;
     color: var(--accent-color);
     text-align: right;
+    width: 57%;
     transition: all ease-in-out 0.3s;
 }
 
@@ -120,11 +124,19 @@
     .proj-card.row, .display-picture {
         width: var(--card-width-md);
     }
+
+    button.modalInfo {
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 767px) {
     .proj-card.row, .display-picture {
         width: var(--card-width-sm);
+    }
+
+    button.modalInfo {
+        width: 50%;
     }
 }
 
