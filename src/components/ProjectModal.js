@@ -26,7 +26,7 @@ const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overvi
         return () => {
             window.removeEventListener('keydown', handleKeydown)
         };
-    }, []);
+    });
 
     return (
         <div className="modalBackground" onClick={() => {modalState(false); navState(true)}}>
