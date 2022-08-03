@@ -48,8 +48,8 @@ const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overvi
                 <Row><img src = {p2} alt = "second"/></Row>
                 <Row>
                     <h3 className="subSection">Goals</h3>
-                    <div>
-                        <ul>
+                    <div className="modalTextArea">
+                        <ul className="modalList">
                             {goals.map((goal) => {
                                 return <li key = {goal}>{goal}</li>
                             })}
@@ -59,8 +59,8 @@ const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overvi
                 <Row className="mobileRow"><img src = {p3} alt = "third" className="mobilePic"/></Row>
                 <Row>
                     <h3 className="subSection">What Could Be Better</h3>
-                    <div>
-                        <ul>
+                    <div className="modalTextArea">
+                        <ul className="modalList">
                             {improvements.map((improvement) => {
                                 return <li key = {improvement}>{improvement}</li>
                             })}

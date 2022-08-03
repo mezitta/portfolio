@@ -5,6 +5,9 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
+
 import { motion } from 'framer-motion'
 
 import './Contact.css'
@@ -35,35 +38,37 @@ const Contact = () => {
             <Container fluid>
                 <Row className="contact-row">
                     <Col xs={12} md={6} className="left-content">
-                        <form ref={form} onSubmit={sendEmail}>
-                            <div className="input-row">
-                                <input 
-                                    type="text"
-                                    name="user_name" 
-                                    placeholder="Your Name"
-                                    aria-label="name"
-                                    className="form-input" 
-                                    required/>
-                            </div>
-                            <div className="input-row">
-                                <input 
-                                    type="email"  
-                                    name="user_email"
-                                    placeholder="Your Email"
-                                    aria-label="email"
-                                    className="form-input" 
-                                    required/>
-                            </div>
-                            <div className="input-row">
-                                <textarea 
-                                    name="message" 
-                                    placeholder="Your Message"
-                                    aria-label="message"
-                                    className="form-input" 
-                                    required/>
-                            </div>
-                            <input type="submit" value="Send" />
-                        </form>
+                        <div className="form-container">
+                            <form ref={form} onSubmit={sendEmail}>
+                                <div className="input-row">
+                                    <input 
+                                        type="text"
+                                        name="user_name" 
+                                        placeholder="Your Name"
+                                        aria-label="name"
+                                        className="form-input" 
+                                        required/>
+                                </div>
+                                <div className="input-row">
+                                    <input 
+                                        type="email"  
+                                        name="user_email"
+                                        placeholder="Your Email"
+                                        aria-label="email"
+                                        className="form-input" 
+                                        required/>
+                                </div>
+                                <div className="input-row">
+                                    <textarea 
+                                        name="message" 
+                                        placeholder="Your Message"
+                                        aria-label="message"
+                                        className="form-input" 
+                                        required/>
+                                </div>
+                                <div className="contact-button-row"><button type="submit" value="Send" className="send-button"> <FontAwesomeIcon icon={faPaperPlane}/> Send</button></div>
+                            </form>
+                        </div>
                     </Col>
                     <Col xs={12} md={6} className="right-content">
                         picture goes here
