@@ -38,10 +38,15 @@ const Contact = () => {
             <Container fluid>
                 <Row className="contact-row">
                     <Col xs={12} md={6} className="left-content">
+                        picture goes here
+                    </Col>
+                    <Col xs={12} md={6} className="right-content">
                         <div className="form-container">
                             <form ref={form} onSubmit={sendEmail}>
+                                <div className="title-row"><h2>Get in Touch</h2></div>
                                 <div className="input-row">
                                     <input 
+                                        id="user_name"
                                         type="text"
                                         name="user_name" 
                                         placeholder="Your Name"
@@ -51,6 +56,7 @@ const Contact = () => {
                                 </div>
                                 <div className="input-row">
                                     <input 
+                                        id="user_email"
                                         type="email"  
                                         name="user_email"
                                         placeholder="Your Email"
@@ -60,6 +66,7 @@ const Contact = () => {
                                 </div>
                                 <div className="input-row">
                                     <textarea 
+                                        id="user_message"
                                         name="message" 
                                         placeholder="Your Message"
                                         aria-label="message"
@@ -69,9 +76,6 @@ const Contact = () => {
                                 <div className="contact-button-row"><button type="submit" value="Send" className="send-button"> <FontAwesomeIcon icon={faPaperPlane}/> Send</button></div>
                             </form>
                         </div>
-                    </Col>
-                    <Col xs={12} md={6} className="right-content">
-                        picture goes here
                     </Col>
                 </Row>
             </Container>
