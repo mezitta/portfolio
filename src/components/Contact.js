@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import { useState } from 'react'
 import emailjs from '@emailjs/browser';
 
 import Container from 'react-bootstrap/Container'
@@ -7,6 +8,9 @@ import Col from 'react-bootstrap/Col'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
+import { faCircleXmark } from '@fortawesome/free-regular-svg-icons';
+import { faEnvelopeCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 
 import { motion } from 'framer-motion'
 
@@ -15,6 +19,9 @@ import './Contact.css'
 const Contact = () => {
     const form = useRef()
 
+    const [openSuccess, setOpenSuccess] = useState(false)
+    const [openError, setOpenError] = useState(false)
+
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -22,10 +29,12 @@ const Contact = () => {
             .then((result) => {
                 console.log(result.text)
                 console.log("message sent")
+                setOpenSuccess(true)
                 e.target.reset()
             }, (error) => {
                 console.log(error.text)
                 console.log("There was an problem sending your message")
+                setOpenError(true)
             })
     }
 
@@ -36,6 +45,7 @@ const Contact = () => {
             exit = {{x: window.innerWidth, transition: {duration: 0.1}}}
         >
             <Container fluid>
+                <Row ></Row>
                 <Row className="contact-row">
                     <Col xs={12} md={6} className="left-content">
                         picture goes here
@@ -73,6 +83,32 @@ const Contact = () => {
                                         className="form-input" 
                                         required/>
                                 </div>
+                                {openSuccess && 
+                                <div className="success-message">
+                                    <div className="message-text"><FontAwesomeIcon icon={faEnvelopeCircleCheck} /> Message Sent</div>
+                                    <button 
+                                        className="close-message" 
+                                        type="button"
+                                        onClick={() => {
+                                            setOpenSuccess(false)
+                                        }}>
+                                        <FontAwesomeIcon icon={faCircleXmark} />
+                                    </button>
+                                </div>
+                                }
+                                {openError && 
+                                <div className="error-message">
+                                    <div className="message-text"><FontAwesomeIcon icon={faTriangleExclamation} /> Error Sending Message</div>
+                                    <button 
+                                        className="close-message" 
+                                        type="button"
+                                        onClick={() => {
+                                            setOpenError(false)
+                                        }}>
+                                        <FontAwesomeIcon icon={faCircleXmark} />
+                                    </button>
+                                </div>
+                                }
                                 <div className="contact-button-row"><button type="submit" value="Send" className="send-button"> <FontAwesomeIcon icon={faPaperPlane}/> Send</button></div>
                             </form>
                         </div>
