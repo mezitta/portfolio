@@ -47,9 +47,7 @@ const Contact = () => {
             <Container fluid>
                 <Row ></Row>
                 <Row className="contact-row">
-                    <Col xs={12} md={6} className="left-content">
-                        picture goes here
-                    </Col>
+                    <Col xs={12} md={6} className="left-content"></Col>
                     <Col xs={12} md={6} className="right-content">
                         <div className="form-container">
                             <form ref={form} onSubmit={sendEmail}>

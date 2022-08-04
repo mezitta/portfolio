@@ -7,15 +7,21 @@
 }
 
 .contact-row {
-    /* background-color: blue; */
     height: 92.5vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
+div.left-content {
+    background-image: url('../assets/contactpicture.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    height: 100%;
+}
+
 div.right-content {
-    /* background-color: red; */
     display: flex;
     justify-content: flex-start;
     padding-left: 0;
@@ -23,26 +29,20 @@ div.right-content {
 }
 
 .form-container {
-    /* background-color: green; */
-    /* background-color: var(--highlight); */
     margin: 0;
     border-radius: 2vh;
-    /* box-shadow: 0 0.25vh 0.5vh rgba(0, 0, 0, 0.3); */
-    /* border-left: 2px solid; */
     height: 80vh;
     width: 35vw;
     padding-top: 5vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 div.title-row {
     text-align: center;
-    /* border-bottom: 0.375vh solid var(--main-color); */
     margin-bottom: 2vh;
     color: var(--accent-color);
-    /* background-color: orange; */
 }
 
 input.form-input, textarea.form-input {
@@ -54,7 +54,6 @@ input.form-input, textarea.form-input {
     border: none;
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.3);
     background: #e4e2b8;;
-    /* box-shadow: 0 0.25vh 0.5vh rgba(0, 0, 0, 0.3); */
 }
 
 textarea.form-input {
@@ -127,6 +126,10 @@ textarea.form-input {
     input.form-input, textarea.form-input {
         width: 40vw;
      }
+
+     div.left-content {
+        display: none;
+     }
 }
 
 @media only screen and (max-width: 767px) {
@@ -136,7 +139,6 @@ textarea.form-input {
     
     .form-container {
         width: 90vw;
-        /* padding-top: 0; */
     }
 
     input.form-input, textarea.form-input {
@@ -148,10 +150,6 @@ textarea.form-input {
     div.right-content {
         justify-content: center;
         padding: 0;
-    }
-
-    .left-content {
-        display: none;
     }
 
     .send-button {
