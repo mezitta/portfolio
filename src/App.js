@@ -8,6 +8,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import About from './components/About'
 import NavBar from './components/NavBar'
+import NotFound from './components/NotFound'
 
 import './App.css'
 
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/projects" element={<Projects  navState = {navState => setNavState(navState)}/>} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>
       </div>

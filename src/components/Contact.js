@@ -29,11 +29,13 @@ const Contact = () => {
             .then((result) => {
                 console.log(result.text)
                 console.log("message sent")
+                setOpenError(false)
                 setOpenSuccess(true)
                 e.target.reset()
             }, (error) => {
                 console.log(error.text)
                 console.log("There was an problem sending your message")
+                setOpenSuccess(false)
                 setOpenError(true)
             })
     }
