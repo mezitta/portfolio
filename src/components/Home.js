@@ -16,8 +16,8 @@ import './Home.css'
 const Home = () => {
     return (
         <motion.div className="home-body"
-            initial = {{width: 0, opacity: 0}}
-            animate = {{width: "100%", opacity: 1}}
+            initial = {{ opacity: 0}}
+            animate = {{ opacity: 1}}
             exit = {{x: window.innerWidth, transition: {duration: 0.1}}}
         >
            <Container fluid>
