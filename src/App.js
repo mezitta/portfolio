@@ -16,6 +16,12 @@ const App = () => {
   const location = useLocation();
   const [navState, setNavState] = useState(true)
 
+  function detectLocChange() {
+    setNavState(true)
+  }
+
+  window.addEventListener('popstate', detectLocChange)
+
   return (
     <div className="App">
       {navState && <NavBar />}
