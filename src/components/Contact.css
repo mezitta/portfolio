@@ -45,9 +45,14 @@ div.title-row {
     color: var(--accent-color);
 }
 
+div.title-row h2 {
+    font-size: 3.5vh;
+}
+
 input.form-input, textarea.form-input {
     height: 5vh;
     width: 25vw;
+    font-size: 1.75vh;
     padding: 0.5em;
     margin-bottom: 2vh;
     border-radius: 0.75vh;
@@ -84,28 +89,26 @@ textarea.form-input {
     border: 0.25vh solid;
 }
 
-.success-message {
+.success-message, .error-message {
     display: flex;
+    box-shadow: 0 0.35vh 0.35vh rgba(0, 0, 0, 0.3);
+    border-radius: 0.75vh;
+    margin-bottom: 1vh;
+    padding: 1vh;
+    width: 100%;
+    font-size: 1.75vh;
+}
+
+.success-message {
     background-color: #8ceba2;
     color:rgb(36, 85, 47);
     border: 1px solid rgba(36, 85, 47, 0.3);
-    box-shadow: 0 0.35vh 0.35vh rgba(0, 0, 0, 0.3);
-    border-radius: 0.75vh;
-    margin-bottom: 1vh;
-    padding: 1vh;
-    width: 100%;
 }
 
 .error-message {
-    display: flex;
     background-color: #eb8c8c;
     color:rgb(85, 36, 36);
     border: 1px solid rgba(85, 36, 36, 0.3);
-    box-shadow: 0 0.35vh 0.35vh rgba(0, 0, 0, 0.3);
-    border-radius: 0.75vh;
-    margin-bottom: 1vh;
-    padding: 1vh;
-    width: 100%;
 }
 
 .message-text {
