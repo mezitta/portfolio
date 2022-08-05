@@ -36,10 +36,10 @@ const About = () => {
                                     <h3>My Name Is</h3>
                                 </div>
                                 <div className="tag-body">
-                                    <p>Howdy! My name is Michael Zitta and I am currently a senior at Michigan Technological University that is majoring in computer science.
-                                    I focus on Front-End development and creating responsive web applications.
-                                    In my free time I like to try and find projects to work on that can help me improve as a developer.
-                                    Cooking and playing games with friends are also activities that I enjoy.</p>
+                                    <p>Howdy! My name is Michael Zitta and I am currently a senior at Michigan Technological University that is majoring in computer <br className="half-desk-break"/>science.
+                                    I focus on Front-<br className="mobile-break"/>End development and creating responsive web applications.
+                                    In my free time<br className="full-desk-break" /> I like to try and find projects to<br className="mobile-break"/> work on that can help me improve as a <br className="full-desk-break"/>developer.
+                                    Cooking and playing games are also activities that I enjoy.</p>
                                 </div>
                             </Col>
                             <Col xs={12} className="about-resume">

@@ -208,11 +208,23 @@ ul {
     padding: 0 !important;
 }
 
+.half-desk-break {
+    display: none;
+}
+
+.mobile-break {
+    display: none;
+}
+
 @media only screen and (max-width: 992px) {
     .about-body {
         margin-top: 10vh;
         padding: 0 15vw;
         display: block;
+    }
+
+    .full-desk-break {
+        display: none;
     }
     
     .tag-header h1{
@@ -221,6 +233,10 @@ ul {
 
     .tag-header h3 {
         font-size: 2.5vh;
+    }
+
+    .half-desk-break{
+        display: inline;
     }
 }
 
@@ -257,6 +273,14 @@ ul {
     .about-row, .skills-row {
         padding: 0;
     }  
+
+    .half-desk-break{
+        display: none;
+    }
+
+    .mobile-break {
+        display: inline;
+    }
 }
 
 @media only screen and (min-width: 701px) and (max-width: 767px) {
