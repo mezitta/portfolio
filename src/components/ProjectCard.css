@@ -13,7 +13,7 @@
 }
 
 .card-container {
-    margin-bottom: 5vh;
+    margin-bottom: 15vh;
     padding: 0;
 }
 
@@ -144,8 +144,29 @@ button.modalInfo {
     .proj-card.row, .display-picture {
         width: var(--card-width-xs);
     }
+
+    .proj-card.row, .picture-link {
+        height: 70vh;
+    }
+
+    .card-container {
+        margin-bottom: 15vh;
+    }
+
+    .projects-body {
+        padding-top: 65vh;
+    }
     
     .picture-box, .desc-box {
         min-width: 50vw;
+        min-height: 35vh;
+    }
+
+    button.modalInfo {
+        width: 80%;
+    }
+
+    .picture-link:hover {
+        min-height: 35vh;
     }
 }
