@@ -67,10 +67,15 @@ textarea.form-input {
 }
 
 .contact-button-row {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .send-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--accent-color);
     color: var(--highlight);
     border: none;
@@ -87,6 +92,35 @@ textarea.form-input {
     background-color: var(--accent-hover);
     box-shadow: 0 0.35vh 0.35vh rgba(0, 0, 0, 0.3);
     border: 0.25vh solid;
+}
+
+.btn-txt {
+    display: inline-flex;
+}
+
+.loading-icon {
+    display: inline-flex;
+
+    min-height: 23px;
+    min-width: 23px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../assets/loadingicon.svg");
+
+    margin-left: 5px;
+
+    animation: rotation 1.5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
 }
 
 .success-message, .error-message {

@@ -1,0 +1,17 @@
+<svg width="16" height="16" version="1.1" viewBox="0 0 4.2333 4.2333" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clipPath870">
+   <path d="m.07688 2.209h2.0713l2.017 2.017v-4.4058h-4.0967z" display="none" fill-rule="evenodd" stroke="#000" stroke-width=".13229"/>
+   <path class="powerclip" d="m-4.7028-4.7028h13.639v13.639h-13.639zm4.7796 6.9117h2.0713l2.017 2.017v-4.4058h-4.0967z" fill-rule="evenodd" stroke="#000" stroke-width=".13229"/>
+  </clipPath>
+ </defs>
+ <g display="none">
+  <rect x="-.3681" y="-.3347" width="4.9695" height="4.9027" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".13229"/>
+ </g>
+ <g opacity=".3">
+  <circle cx="2.1167" cy="2.1167" r="1.7003" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width=".23833"/>
+ </g>
+ <g>
+  <path d="m3.8169 2.1167a1.7003 1.7003 0 01-1.7003 1.7003 1.7003 1.7003 0 01-1.7003-1.7003 1.7003 1.7003 0 011.7003-1.7003 1.7003 1.7003 0 011.7003 1.7003" clip-path="url(#clipPath870)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width=".23833"/>
+ </g>
+</svg>

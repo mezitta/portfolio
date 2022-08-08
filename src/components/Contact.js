@@ -21,9 +21,12 @@ const Contact = () => {
 
     const [openSuccess, setOpenSuccess] = useState(false)
     const [openError, setOpenError] = useState(false)
+    const [sending, setSending] = useState(false)
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        setSending(true)
 
         emailjs.sendForm('service_fxs8ufa', 'template_202xqfc', form.current, 'uGZfEL1BtqlDq53-9')
             .then((result) => {
@@ -31,12 +34,14 @@ const Contact = () => {
                 console.log("message sent")
                 setOpenError(false)
                 setOpenSuccess(true)
+                setSending(false)
                 e.target.reset()
             }, (error) => {
                 console.log(error.text)
                 console.log("There was an problem sending your message")
                 setOpenSuccess(false)
                 setOpenError(true)
+                setSending(false)
             })
     }
 
@@ -109,7 +114,12 @@ const Contact = () => {
                                     </button>
                                 </div>
                                 }
-                                <div className="contact-button-row"><button type="submit" value="Send" className="send-button"> <FontAwesomeIcon icon={faPaperPlane}/> Send</button></div>
+                                <div className="contact-button-row">
+                                    <button type="submit" value="Send" className="send-button">
+                                        <div className="btn-txt"><FontAwesomeIcon icon={faPaperPlane}/> Send</div>
+                                        {sending && <div className="loading-icon"></div>}
+                                    </button>
+                                </div>
                             </form>
                         </div>
                     </Col>
