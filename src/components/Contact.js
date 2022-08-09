@@ -116,7 +116,7 @@ const Contact = () => {
                                 }
                                 <div className="contact-button-row">
                                     <button type="submit" value="Send" className="send-button">
-                                        <div className="btn-txt"><FontAwesomeIcon icon={faPaperPlane}/> Send</div>
+                                        <div className="btn-txt"><FontAwesomeIcon icon={faPaperPlane}/>   Send</div>
                                         {sending && <div className="loading-icon"></div>}
                                     </button>
                                 </div>

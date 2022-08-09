@@ -96,6 +96,10 @@ textarea.form-input {
 
 .btn-txt {
     display: inline-flex;
+    align-items: center;
+}
+.svg-inline--fa.fa-paper-plane {
+    margin-right: 3px;
 }
 
 .loading-icon {
