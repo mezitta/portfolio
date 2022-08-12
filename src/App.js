@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
-      {navState && <NavBar />}
+      <AnimatePresence>{navState && <NavBar />}</AnimatePresence>
       <div className='App-body' id="App-body">
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
