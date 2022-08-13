@@ -12,7 +12,7 @@ import { faCircleXmark } from '@fortawesome/free-regular-svg-icons';
 import { faEnvelopeCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 import './Contact.css'
 
@@ -54,7 +54,26 @@ const Contact = () => {
             <Container fluid>
                 <Row ></Row>
                 <Row className="contact-row">
-                    <Col xs={12} md={6} className="left-content"></Col>
+                    <Col xs={12} md={6} className="left-content">
+                        <motion.div 
+                            className="left-img"
+
+                            initial = {{
+                                opacity: 0,
+                                scale: 0
+                            }}
+
+                            animate = {{
+                                opacity: 1,
+                                scale: 1,
+                                transition: {
+                                    duration: 0.3,
+                                    delay: 0.2
+                                }
+                            }}
+
+                        ></motion.div>
+                    </Col>
                     <Col xs={12} md={6} className="right-content">
                         <div className="form-container">
                             <form ref={form} onSubmit={sendEmail}>
@@ -88,32 +107,79 @@ const Contact = () => {
                                         className="form-input" 
                                         required/>
                                 </div>
-                                {openSuccess && 
-                                <div className="success-message">
-                                    <div className="message-text"><FontAwesomeIcon icon={faEnvelopeCircleCheck} /> Message Sent</div>
-                                    <button 
-                                        className="close-message" 
-                                        type="button"
-                                        onClick={() => {
-                                            setOpenSuccess(false)
-                                        }}>
-                                        <FontAwesomeIcon icon={faCircleXmark} />
-                                    </button>
-                                </div>
-                                }
-                                {openError && 
-                                <div className="error-message">
-                                    <div className="message-text"><FontAwesomeIcon icon={faTriangleExclamation} /> Error Sending Message</div>
-                                    <button 
-                                        className="close-message" 
-                                        type="button"
-                                        onClick={() => {
-                                            setOpenError(false)
-                                        }}>
-                                        <FontAwesomeIcon icon={faCircleXmark} />
-                                    </button>
-                                </div>
-                                }
+
+                                <AnimatePresence>
+                                    {openSuccess && 
+                                    <motion.div 
+                                        className="success-message"
+
+                                        initial = {{
+                                            opacity: 1,
+                                            scaleY: 0
+                                        }}
+
+                                        animate = {{
+                                            opacity: 1,
+                                            scaleY: 1,
+                                            transition: {
+                                                duration: 0.3
+                                            }
+                                        }}
+
+                                        exit = {{
+                                            opacity: 0,
+                                            x: 800
+                                        }}
+                                    >
+                                        <div className="message-text"><FontAwesomeIcon icon={faEnvelopeCircleCheck} /> Message Sent</div>
+                                        <button 
+                                            className="close-message" 
+                                            type="button"
+                                            onClick={() => {
+                                                setOpenSuccess(false)
+                                            }}>
+                                            <FontAwesomeIcon icon={faCircleXmark} />
+                                        </button>
+                                    </motion.div>
+                                    }
+                                </AnimatePresence>
+
+                                <AnimatePresence>
+                                    {openError && 
+                                    <motion.div 
+                                        className="error-message"
+
+                                        initial = {{
+                                            opacity: 1,
+                                            scaleY: 0
+                                        }}
+
+                                        animate = {{
+                                            opacity: 1,
+                                            scaleY: 1,
+                                            transition: {
+                                                duration: 0.3
+                                            }
+                                        }}
+
+                                        exit = {{
+                                            opacity: 0,
+                                            x: 800
+                                        }}
+                                    >
+                                        <div className="message-text"><FontAwesomeIcon icon={faTriangleExclamation} /> Error Sending Message</div>
+                                        <button 
+                                            className="close-message" 
+                                            type="button"
+                                            onClick={() => {
+                                                setOpenError(false)
+                                            }}>
+                                            <FontAwesomeIcon icon={faCircleXmark} />
+                                        </button>
+                                    </motion.div>
+                                    }
+                                </AnimatePresence>
+
                                 <div className="contact-button-row">
                                     <button type="submit" value="Send" className="send-button">
                                         <div className="btn-txt"><FontAwesomeIcon icon={faPaperPlane}/>   Send</div>

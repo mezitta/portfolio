@@ -30,8 +30,10 @@
 }
 
 .home-right {
-    font-size: 9vw;
-    font-weight: bold;
+    height: 100%;
+}
+
+.home-right-img {
     height: 100%;
     background-image: url('../assets/homeshark.svg');
     background-repeat: no-repeat;
