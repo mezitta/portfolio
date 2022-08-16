@@ -89,7 +89,7 @@ const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overvi
                         <Row><img src = {p1} alt = "main page"/></Row>
                         <Row>
                             <h3 className="subSection">Overview</h3>
-                            <p>{overview}</p>
+                            <p className="modalTextArea">{overview}</p>
                         </Row>
                         <Row><img src = {p2} alt = "second"/></Row>
                         <Row>
@@ -116,7 +116,7 @@ const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overvi
                         <Row className="mobileRow"><img src = {p4} alt = "fourth" className="mobilePic"/></Row>
                         <Row className="repoLink">
                             <a target="_blank" rel="noreferrer" href={link}>
-                                <FontAwesomeIcon icon={faGithub} className="gitIcon"/> Repo
+                                <FontAwesomeIcon icon={faGithub} className="modalGitIcon"/> Repo
                             </a>
                         </Row>
                     </Container>

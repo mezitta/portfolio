@@ -75,6 +75,10 @@ img.mobilePic {
     padding: 1.5em;
 }
 
+.repoLink a:hover, .modalGitIcon:hover {
+    color: #094fb8;
+}
+
 img {
     padding: 0 !important;
     box-shadow: 0 0.25vh 0.5vh rgba(0, 0, 0, 0.3);
@@ -86,7 +90,10 @@ ul.modalList {
 
 div.modalTextArea {
     padding-left: 2em;
-    padding-bottom: 1em;
+}
+
+p.modalTextArea, div.modalTextArea  {
+    padding-bottom: 2em;
 }
 
 @media only screen and (max-width: 1100px) {

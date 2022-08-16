@@ -38,7 +38,7 @@ const Projects = ({navState}) => {
     return (
             <motion.div className="projects"
                 initial = {{width: 0, opacity: 0}}
-                animate = {{width: "100%", opacity: 1}}
+                animate = {{width: "100%", opacity: 1, transition: {duration: 0.2}}}
                 exit = {{x: window.innerWidth, transition: {duration: 0.1}}}
             >
                 <ScrollToTop />
