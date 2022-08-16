@@ -33,6 +33,26 @@ import ps4 from './assets/ps4.png'
 
 import './App.css'
 
+const imgs = [
+  huskyRvwPic, 
+  backHP,
+  hrp1,
+  hrp2,
+  hrp3,
+  hrp4,
+  lbfePic,
+  backLbfe,
+  lbfep1,
+  lbfep2,
+  lbfep3,
+  lbfep4,
+  portPic,
+  backPort,
+  ps1,
+  ps2,
+  ps3,
+  ps4
+]
 
 const App = () => {
   const location = useLocation();
@@ -45,10 +65,11 @@ const App = () => {
 
   const cacheImages = async (imgArray) => {
     const promises = await imgArray.map((imgSrc) => {
-      return new Promise(function (resolve, reject) {
+      return new Promise((resolve, reject) => {
         const img = new Image();
 
         img.src = imgSrc;
+        console.log(img)
         img.onload = resolve();
         img.onerror = reject();
       })
@@ -59,27 +80,6 @@ const App = () => {
   }
   
   useEffect(() => {
-    const imgs = [
-      './assets/huskylogoyellow.png',
-      "./assets/mtu_campus.jpg",
-      './assets/hrp1.jpg',
-      './assets/hrp2.png',
-      './assets/hrp3.png',
-      './assets/hrp4.png',
-      './assets/LBFE_LOGOV_red_upmichigan.png',
-      './assets/hancock.jpg',
-      './assets/lbfep1.png',
-      './assets/lbfep2.png',
-      './assets/lbfep3.png',
-      './assets/lbfep4.png',
-      './assets/homeshark.svg',
-      './assets/stjoe.jpg',
-      './assets/ps1.png',
-      './assets/ps2.png',
-      './assets/ps3.png',
-      './assets/ps4.png',
-    ]
-
     cacheImages(imgs)
   }, [])
 
@@ -96,26 +96,26 @@ const App = () => {
             <Route path="/projects" element={<Projects  
               navState = {navState => setNavState(navState)}
 
-              huskyRvwPic = {huskyRvwPic}
-              backHP = {backHP}
-              hrp1 = {hrp1}
-              hrp2 = {hrp2}
-              hrp3 = {hrp3}
-              hrp4 = {hrp4}
+              huskyRvwPic = {imgs[0]}
+              backHP = {imgs[1]}
+              hrp1 = {imgs[2]}
+              hrp2 = {imgs[3]}
+              hrp3 = {imgs[4]}
+              hrp4 = {imgs[5]}
 
-              lbfePic = {lbfePic}
-              backLbfe = {backLbfe}
-              lbfep1 = {lbfep1}
-              lbfep2 = {lbfep2}
-              lbfep3 = {lbfep3}
-              lbfep4 = {lbfep4}
+              lbfePic = {imgs[6]}
+              backLbfe = {imgs[7]}
+              lbfep1 = {imgs[8]}
+              lbfep2 = {imgs[9]}
+              lbfep3 = {imgs[10]}
+              lbfep4 = {imgs[11]}
 
-              portPic = {portPic}
-              backPort = {backPort}
-              ps1 = {ps1}
-              ps2 = {ps2}
-              ps3 = {ps3}
-              ps4 = {ps4}
+              portPic = {imgs[12]}
+              backPort = {imgs[13]}
+              ps1 = {imgs[14]}
+              ps2 = {imgs[15]}
+              ps3 = {imgs[16]}
+              ps4 = {imgs[17]}
               />}
             />
             <Route path="/contact" element={<Contact />} />
