@@ -10,31 +10,30 @@ import './Projects.css'
 import ProjectCard from './ProjectCard'
 import ScrollToTop from '../scrollToTop'
 
-import huskyRvwPic from '../assets/huskylogoyellow.png'
-import backHP from '../assets/mtu_campus.jpg'
-import hrp1 from '../assets/hrp1.jpg'
-import hrp2 from '../assets/hrp2.png'
-import hrp3 from '../assets/hrp3.png'
-import hrp4 from '../assets/hrp4.png'
+// import huskyRvwPic from '../assets/huskylogoyellow.png'
+// import backHP from '../assets/mtu_campus.jpg'
+// import hrp1 from '../assets/hrp1.jpg'
+// import hrp2 from '../assets/hrp2.png'
+// import hrp3 from '../assets/hrp3.png'
+// import hrp4 from '../assets/hrp4.png'
 
-import lbfePic from '../assets/LBFE_LOGOV_red_upmichigan.png'
-import backLbfe from '../assets/hancock.jpg'
-import lbfep1 from '../assets/lbfep1.png'
-import lbfep2 from '../assets/lbfep2.png'
-import lbfep3 from '../assets/lbfep3.png'
-import lbfep4 from '../assets/lbfep4.png'
+// import lbfePic from '../assets/LBFE_LOGOV_red_upmichigan.png'
+// import backLbfe from '../assets/hancock.jpg'
+// import lbfep1 from '../assets/lbfep1.png'
+// import lbfep2 from '../assets/lbfep2.png'
+// import lbfep3 from '../assets/lbfep3.png'
+// import lbfep4 from '../assets/lbfep4.png'
 
-import ps1 from '../assets/ps1.png'
-import ps2 from '../assets/ps2.png'
-import ps3 from '../assets/ps3.png'
-import ps4 from '../assets/ps4.png'
-
-import portPic from '../assets/homeshark.svg'
-import backPort from '../assets/stjoe.jpg'
+// import portPic from '../assets/homeshark.svg'
+// import backPort from '../assets/stjoe.jpg'
+// import ps1 from '../assets/ps1.png'
+// import ps2 from '../assets/ps2.png'
+// import ps3 from '../assets/ps3.png'
+// import ps4 from '../assets/ps4.png'
 
 import { huskyDesc, huskyOvrw, huskyGoals, huskyImprv, lbfeDesc, lbfeOvrw, lbfeGoals, lbfeImprv, portDesc, portOvrw, portGoals, portImprv } from './ProjDescs.js'
 
-const Projects = ({navState}) => {
+const Projects = ({navState, huskyRvwPic, backHP, hrp1, hrp2, hrp3, hrp4, lbfePic, backLbfe, lbfep1, lbfep2, lbfep3, lbfep4, portPic, backPort, ps1, ps2, ps3, ps4}) => {
     return (
             <motion.div className="projects"
                 initial = {{width: 0, opacity: 0}}

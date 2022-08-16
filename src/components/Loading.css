@@ -1,0 +1,11 @@
+.spinner {
+    height: 92.5vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFDD0;
+    color: #bd216c;
+    font-weight: bold;
+    font-size: 10vh;
+}
