@@ -1,5 +1,5 @@
 .spinner {
-    height: 92.5vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -8,4 +8,14 @@
     color: #bd216c;
     font-weight: bold;
     font-size: 10vh;
+    background-image: url('../assets/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+}
+
+@media only screen and (max-width: 700px) {
+    .spinner {
+        background-size: 30%;
+    }
 }

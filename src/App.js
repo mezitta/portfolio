@@ -76,7 +76,12 @@ const App = () => {
     })
 
     await Promise.all(promises)
-    setImgLoading(false)
+
+    setTimeout(() => {
+      console.log('loading')
+      setImgLoading(false)
+    }, 1500)
+    
   }
   
   useEffect(() => {
