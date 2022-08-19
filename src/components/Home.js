@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 import Container from 'react-bootstrap/Container'
@@ -14,6 +14,26 @@ import { motion } from 'framer-motion'
 import './Home.css'
 
 const Home = ({desktopShark, mobileShark}) => {
+    
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+    const [isMobile, setisMobile] = useState(false)
+
+    useEffect (() => {
+        const handleResize = () =>{
+            setWindowWidth(window.innerWidth)
+        }
+        
+        window.addEventListener('resize', handleResize)
+
+        if(windowWidth <= 992) {
+            setisMobile(true)
+        } else {
+            setisMobile(false)
+        }
+
+        return () => window.removeEventListener('resize', handleResize)
+    }, [windowWidth])
+
     return (
         <motion.div className="home-body"
             initial = {{ opacity: 0}}
@@ -21,7 +41,7 @@ const Home = ({desktopShark, mobileShark}) => {
             exit = {{x: window.innerWidth, transition: {duration: 0.1}}}
         >
            <Container fluid>
-               <Row className="home-row">
+               <Row className="home-row" style = {{backgroundImage: `url(${isMobile ? mobileShark: ''})`}}>
                     <Col sm={12} lg={6} className="home-left">
                         <motion.div
                            initial = {{

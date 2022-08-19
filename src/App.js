@@ -76,7 +76,6 @@ const App = () => {
         const img = new Image();
 
         img.src = imgSrc;
-        console.log(img)
         img.onload = resolve();
         img.onerror = reject();
       })
