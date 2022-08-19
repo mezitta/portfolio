@@ -35,7 +35,7 @@
 
 .home-right-img {
     height: 100%;
-    background-image: url('../assets/homeshark.svg');
+    /* background-image: url('../assets/homeshark.svg'); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center bottom;
@@ -110,8 +110,6 @@
         margin-right: 10px;
     }
 }
-
-
 
 @media only screen and (max-width: 1200px) {
     .role {

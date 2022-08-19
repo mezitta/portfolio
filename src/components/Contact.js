@@ -16,7 +16,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 import './Contact.css'
 
-const Contact = () => {
+const Contact = ({contactPic}) => {
     const form = useRef()
 
     const [openSuccess, setOpenSuccess] = useState(false)
@@ -54,9 +54,10 @@ const Contact = () => {
             <Container fluid>
                 <Row ></Row>
                 <Row className="contact-row">
-                    <Col xs={12} md={6} className="left-content">
+                    <Col xs={12} md={6} className="left-content" >
                         <motion.div 
                             className="left-img"
+                            style = {{backgroundImage: `url(${contactPic})`}}
 
                             initial = {{
                                 opacity: 0,

@@ -31,6 +31,10 @@ import ps2 from './assets/ps2.png'
 import ps3 from './assets/ps3.png'
 import ps4 from './assets/ps4.png'
 
+import contactPic from './assets/contactpicture.svg'
+import desktopShark from './assets/homeshark.svg'
+import mobileShark from './assets/mobileshark.svg'
+
 import './App.css'
 
 const imgs = [
@@ -51,7 +55,10 @@ const imgs = [
   ps1,
   ps2,
   ps3,
-  ps4
+  ps4,
+  contactPic,
+  desktopShark,
+  mobileShark
 ]
 
 const App = () => {
@@ -97,7 +104,7 @@ const App = () => {
       {imgLoading ? <Loading /> :
         <AnimatePresence>
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home  desktopShark = {imgs[19]} mobileShark = {imgs[20]}/>} />
             <Route path="/projects" element={<Projects  
               navState = {navState => setNavState(navState)}
 
@@ -123,7 +130,7 @@ const App = () => {
               ps4 = {imgs[17]}
               />}
             />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact contactPic = {imgs[18]}/>} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

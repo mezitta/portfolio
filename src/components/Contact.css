@@ -22,7 +22,7 @@ div.left-content {
 }
 
 div.left-img {
-    background-image: url('../assets/contactpicture.svg');
+    /* background-image: url('../assets/contactpicture.svg'); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center top;

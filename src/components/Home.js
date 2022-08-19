@@ -13,7 +13,7 @@ import { motion } from 'framer-motion'
 
 import './Home.css'
 
-const Home = () => {
+const Home = ({desktopShark, mobileShark}) => {
     return (
         <motion.div className="home-body"
             initial = {{ opacity: 0}}
@@ -66,6 +66,8 @@ const Home = () => {
                     
                     <Col sm={6}  className="home-right">
                         <motion.div className="home-right-img" 
+                            style = {{ backgroundImage: `url(${desktopShark})`}}
+                            
                             initial = {{
                                 opacity: 0,
                                 x: 400
