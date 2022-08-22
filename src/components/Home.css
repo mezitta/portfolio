@@ -108,12 +108,62 @@
 @media only screen and (max-width: 500px) {
     .project-button {
         margin-right: 10px;
+        font-size: 4vw ;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .project-button {
+        margin-right: 5vw;
+        font-size: 6vw ;
+    }
+
+    .social-link {
+        margin-right: 1vw;
+    }
+
+    .social-links a {
+        font-size: 4vh !important;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     .role {
         font-size: 4vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .project-button {
+        margin-right: 7vw;
+        font-size: 5vw ;
+    }
+
+    .button-row {
+        margin-bottom: 2vh;
+    }
+
+    .social-links a {
+        font-size: 4.25vh;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 992px) {
+    .project-button {
+        font-size: 3.5vw;
+    }
+
+    .button-row {
+        margin-bottom: 4vh;
+    }
+
+    .social-link {
+        padding-right: 10vw;
+        margin-right: 2.5vw;
+    }
+
+    .social-links a {
+        font-size: 4.5vh;
     }
 }
 
