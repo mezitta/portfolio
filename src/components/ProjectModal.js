@@ -31,29 +31,12 @@ const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overvi
 
     return (
             <motion.div 
-                className="modalBackground" 
-                onClick={() => {modalState(false); navState(true)}}
-
-                initial = {{
-                    opacity: 0
-                }}
-
-                animate = {{
-                    opacity: 1,
-                    transition: {
-                        duration: 0.3
-                    }
-                }}
-
-                exit = {{
-                    opacity: 0,
-                    transition: {
-                        duration: 0.3,
-                        delay: 0.1
-                    }
-                }}
+                className="modalContent" 
+            
             >
                 <motion.div
+                    className="modalContainer"
+
                     initial = {{
                         y: -500,
                         opacity: 0
@@ -121,6 +104,30 @@ const ProjectModal = ({p1, p2, p3, p4, title, link, modalState, navState, overvi
                         </Row>
                     </Container>
                 </motion.div>
+                
+                <motion.div 
+                    className="modalBackground"
+                    onClick={() => {modalState(false); navState(true)}}
+
+                    initial = {{
+                        opacity: 0
+                    }}
+    
+                    animate = {{
+                        opacity: 1,
+                        transition: {
+                            duration: 0.3
+                        }
+                    }}
+    
+                    exit = {{
+                        opacity: 0,
+                        transition: {
+                            duration: 0.3,
+                            delay: 0.1
+                        }
+                    }}
+                />
             </motion.div>
     )
 }
