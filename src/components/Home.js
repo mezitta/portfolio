@@ -60,8 +60,8 @@ const Home = ({desktopShark, mobileShark}) => {
                             <div 
                                 className="home-text">
                                 <h2>Michael Zitta</h2>
-                                <h1 className="role">Front-End Developer</h1>
-                                <h3>Howdy! I am a front-end developer that focuses on creating responsive web applications</h3>
+                                <h1 className="role">Software Developer</h1>
+                                <h3>Howdy! I am a software developer that focuses on creating responsive web applications</h3>
                             </div>
 
                             <Row className="button-row">
