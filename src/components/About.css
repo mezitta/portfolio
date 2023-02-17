@@ -188,7 +188,7 @@
 .about-resume button {
     background-color: var(--accent-color);
     color: var(--highlight);
-    border: none;
+    border: 0.25vh solid var(--accent-color);
     border-radius: 1vh;
     padding: .25em 1em;
     font-size: 2.5vh;

@@ -71,7 +71,7 @@
     background-color: var(--accent-color);
     margin-right: 30px;
     color: var(--highlight);
-    border: none;
+    border: 0.25vh solid var(--accent-color);
     border-radius: 1vh;
     padding: .25em 1em;
     width: fit-content;
