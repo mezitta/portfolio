@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { motion } from 'framer-motion'
 
-import Resume from '../assets/2022 Resume.pdf'
+import Resume from '../assets/2023ResumeZitta.pdf'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faVuejs } from "@fortawesome/free-brands-svg-icons"
