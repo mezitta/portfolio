@@ -28,7 +28,7 @@ const Contact = ({contactPic}) => {
 
         setSending(true)
 
-        emailjs.sendForm('service_fxs8ufa', 'template_202xqfc', form.current, 'uGZfEL1BtqlDq53-9')
+        emailjs.sendForm('service_l8sincj', 'template_202xqfc', form.current, 'uGZfEL1BtqlDq53-9')
             .then((result) => {
                 console.log(result.text)
                 console.log("message sent")
