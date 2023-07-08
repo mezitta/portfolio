@@ -39,9 +39,9 @@ const About = () => {
                                 </div>
                                 <div className="tag-body" >
                                     <p>
-                                        Howdy! My name is Michael Zitta and I am currently a senior at Michigan Technological University that is majoring in computer science.
-                                        I focus on front-end development and creating responsive web applications. In my free time I like to try and find projects to work on that
-                                        can help me improve as a developer. Cooking and playing games are also activities that I enjoy.
+                                        Howdy! My name is Michael Zitta and I am currently an Application Developer for Henrico County where 
+                                        I develop responsive web applications using Blazor, ASP.NET, Dapper, and SQL. 
+                                        Outside of work I like cooking and playing games with friends.
                                     </p>
                                 </div>
                                 
